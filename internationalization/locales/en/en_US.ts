@@ -19,6 +19,7 @@ export const en_US = {
       '1 month of free Starter subscription (29 USD)',
     "Exclusive Access to Alex's strategy":
       "Exclusive Access to Alex's strategy",
-    'Join Discord and Text': 'Join Discord',
+    'Join Discord': 'Join Discord',
+    'and Text': 'and Text',
   },
 };

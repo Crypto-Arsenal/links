@@ -18,6 +18,7 @@ export const zh_TW = {
       '一個月的免費Starter訂閱 (價值 29 USD)',
     "Exclusive Access to Alex's strategy":
       '得到獨家權限去跟Trader Alex的量化策略',
-    'Join Discord and Text': '加入Discord&傳',
+    'Join Discord': '加入Discord',
+    'and Text': '並且傳 ',
   },
 };

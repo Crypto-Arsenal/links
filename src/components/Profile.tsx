@@ -29,10 +29,12 @@ import {
     ListIcon,
     ListItem
 } from '@chakra-ui/react';
+import { TbMathFunction } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
 import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaTelegram, FaTwitter } from 'react-icons/fa';
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
+
 import { BsCaretDown, BsFileWordFill, BsGiftFill, BsGlobe2, BsInstagram, BsJournalBookmark, BsPeople, BsPeopleFill, BsTelegram } from 'react-icons/bs';
 import { ImInstagram } from 'react-icons/im';
 import { CheckIcon, ExternalLinkIcon } from '@chakra-ui/icons';
@@ -61,7 +63,6 @@ const ExpandableMeetTaipieButton = () => {
 
     return (
         <Box
-
             boxShadow={
                 '0px 1px 25px -5px rgb(227 0 127 / 49%), 0 10px 10px -5px rgb(227 0 127 / 49%)'
             }
@@ -133,9 +134,9 @@ const ExpandableMeetTaipieButton = () => {
                                 }}
                                 leftIcon={<FaDiscord />}
                             >
-                                {t("meetTaipei.Join Discord and Text")}
+                                {t("meetTaipei.Join Discord")}
                             </Button>
-                            <Text fontWeight={'semibold'}> and text <Badge bg='#5a75d8' color="white" ml={2}> <Text fontWeight={'semibold'}>-meet ca  </Text>  </Badge></Text>
+                            <Text fontWeight={'semibold'}> {t("meetTaipei.and Text")}  <Badge bg='#5a75d8' color="white" ml={2}> <Text fontWeight={'semibold'}>-meet ca  </Text>  </Badge></Text>
                             {/* <Button
                                 as="a"
                                 href="https://www.yourator.co/companies/Crypto-Arsenal"
@@ -250,7 +251,7 @@ const ExpandableButton = () => {
                                 }}
                                 rightIcon={<ExternalLinkIcon />}
                             >
-                                Cakeresume  <Badge color='green' ml={2}>  3 NEW </Badge>
+                                Cakeresume  <Badge colorScheme='green' ml={2}>  3 NEW </Badge>
                             </Button>
                             <Button
                                 as="a"
@@ -270,7 +271,7 @@ const ExpandableButton = () => {
                                 }}
                                 rightIcon={<ExternalLinkIcon />}
                             >
-                                Yourator <Badge color='green' ml={2}> 4 NEW </Badge>
+                                Yourator <Badge colorScheme='green' ml={2}> 4 NEW </Badge>
                             </Button>
                         </Box>
                     </Box>
@@ -280,11 +281,12 @@ const ExpandableButton = () => {
     )
 }
 
+
 export default function SocialProfileSimple() {
     const { t } = useTranslation()
     const banner = '/assets/images/banner.png'
     return (
-        <Center py={6}>
+        <Center py={10}>
             <Box
                 // maxW={'620px'}
                 w={'full'}
@@ -382,7 +384,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://crypto-arsenal.io"
+                        href="https://discord.gg/7CceNxrPbw"
                         target="_blank"
                         variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
                         <Center>
@@ -391,7 +393,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://crypto-arsenal.io"
+                        href="https://twitter.com/_cryptoarsenal_"
                         target="_blank"
                         variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
                         <Center>
@@ -486,6 +488,7 @@ export default function SocialProfileSimple() {
                                 <ExpandableButton />
                             </Stack>
                         </Box>
+
                     </Stack>
                 </Center>
             </Box >
