@@ -286,7 +286,7 @@ export default function SocialProfileSimple() {
     const { t } = useTranslation()
     const banner = '/assets/images/banner.png'
     return (
-        <Center py={10}>
+        <Center py={3}>
             <Box
                 // maxW={'620px'}
                 w={'full'}

@@ -8,7 +8,7 @@ const Header = () => {
       as='header'
       // position='fixed'
       // top='0'
-      pt={5}
+      pt={3}
       px={5}
       zIndex='tooltip'
       justify='space-between'
