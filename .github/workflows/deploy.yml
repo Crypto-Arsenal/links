@@ -1,0 +1,49 @@
+name: deploy-vercel
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  checks:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Test Build
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          npm run build
+  deploy-to-vercel:
+    #https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
+    if: github.event_name != 'pull_request' && github.repository == 'Crypto-Arsenal/links'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: Deploy to Vercel through personal account
+        env:
+          USE_SSH: true
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions"
+          git remote add inno git@github.com:innocradle/links.git
+          git checkout master
+          git push inno -fs
+          
