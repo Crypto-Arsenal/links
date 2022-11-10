@@ -45,5 +45,5 @@ jobs:
           git config --global user.name "gh-actions"
           git remote add inno git@github.com:innocradle/links.git
           git checkout master
-          git push inno -fs
+          git push inno -f
           
