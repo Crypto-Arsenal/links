@@ -303,7 +303,7 @@ export default function SocialProfileSimple() {
                     w='100%'
                 />
                 <Avatar
-                    mt='-43px'
+                    mt='-42px'
                     border='4px solid'
                     size={'xl'}
                     src={
@@ -326,7 +326,7 @@ export default function SocialProfileSimple() {
                 />
 
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
-                    <Flex justify={'center'} align="center" >
+                    <Flex justify={'center'} align="center" letterSpacing={'wide'} fontWeight="bold">
                         Crypto Arsenal
                         <Box ml="1">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,20 +336,21 @@ export default function SocialProfileSimple() {
                         </Box>
                     </Flex>
                 </Heading>
-                <Text fontWeight={600} color={'gray.500'} mb={4}>
+                <Text fontWeight={600} color={'gray.500'} mb={3}>
                     @crypto_arsenal
                 </Text>
 
                 <Text
+                    fontSize={'sm'}
                     fontWeight={'thin'}
                     textAlign={'center'}
+                    letterSpacing={'wide'}
                     color={useColorModeValue('gray.700', 'gray.400')}
-                    px={3}>
+                    px={2}>
                     Crypto Bot Marketplace that Bridges the Gap Between Quants and Traders
-
                 </Text>
                 <Center>
-                    <Stack direction={'row'} justify={'center'} spacing={6} mt={3}>
+                    <Stack direction={'row'} justify={'center'} spacing={6} mt={3} position="relative" left="20px">
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>5.4</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
