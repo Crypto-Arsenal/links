@@ -336,7 +336,7 @@ export default function SocialProfileSimple() {
                         </Box>
                     </Flex>
                 </Heading>
-                <Box mb={3}>
+                <Box mb={4}>
                     <Text fontWeight={'semibold'} color={'gray.500'} as="a" href="https://twitter.com/_cryptoarsenal_">
                         @_cryptoarsenal_
                     </Text>
@@ -350,20 +350,21 @@ export default function SocialProfileSimple() {
                     px={3}>
                     Crypto Bot Marketplace that Bridges the Gap Between Quants and Traders
                 </Text>
-                <Center>
-                    <Stack direction={'row'} justify={'center'} spacing={6} mt={3} ml="50px">
-                        <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>5.4</Text>
-                            <Text fontSize={'sm'} color={'gray.500'}>
-                                {t("stats.Users")}
-                            </Text>
-                        </Stack>
+                <Center mt={4}>
+                    <Stack direction={'row'} justify={'center'} spacing={4} ml="15px">
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>1.26k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Trading Bots")}
                             </Text>
                         </Stack>
+                        <Stack spacing={0} align={'center'}>
+                            <Text fontWeight={600}>5.4</Text>
+                            <Text fontSize={'sm'} color={'gray.500'}>
+                                {t("stats.Users")}
+                            </Text>
+                        </Stack>
+
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>28M</Text>
                             <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
@@ -374,7 +375,7 @@ export default function SocialProfileSimple() {
                 </Center>
 
 
-                <Wrap spacing='6px' justify='center' mt={6}>
+                <Wrap spacing='4px' justify='center' mt={6}>
                     <Button
                         as="a"
                         href="https://crypto-arsenal.io"
