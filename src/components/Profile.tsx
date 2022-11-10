@@ -136,7 +136,7 @@ const ExpandableMeetTaipieButton = () => {
                             >
                                 {t("meetTaipei.Join Discord")}
                             </Button>
-                            <Text fontWeight={'semibold'}> {t("meetTaipei.and Text")}  <Badge bg='#5a75d8' color="white" ml={2}> <Text fontWeight={'semibold'}>-meet ca  </Text>  </Badge></Text>
+                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}  <Badge bg='#5a75d8' color="white" ml={2}> <Text fontWeight={'semibold'}>-meet ca  </Text>  </Badge></Text>
                             {/* <Button
                                 as="a"
                                 href="https://www.yourator.co/companies/Crypto-Arsenal"
@@ -336,21 +336,22 @@ export default function SocialProfileSimple() {
                         </Box>
                     </Flex>
                 </Heading>
-                <Text fontWeight={600} color={'gray.500'} mb={3}>
-                    @crypto_arsenal
-                </Text>
-
+                <Box mb={3}>
+                    <Text fontWeight={'semibold'} color={'gray.500'} as="a" href="https://twitter.com/_cryptoarsenal_">
+                        @_cryptoarsenal_
+                    </Text>
+                </Box>
                 <Text
                     fontSize={'sm'}
                     fontWeight={'thin'}
                     textAlign={'center'}
                     letterSpacing={'wide'}
                     color={useColorModeValue('gray.700', 'gray.400')}
-                    px={2}>
+                    px={3}>
                     Crypto Bot Marketplace that Bridges the Gap Between Quants and Traders
                 </Text>
                 <Center>
-                    <Stack direction={'row'} justify={'center'} spacing={6} mt={3} position="relative" left="20px">
+                    <Stack direction={'row'} justify={'center'} spacing={6} mt={3} ml="50px">
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>5.4</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
@@ -365,7 +366,7 @@ export default function SocialProfileSimple() {
                         </Stack>
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>28M</Text>
-                            <Text fontSize={'sm'} color={'gray.500'}>
+                            <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                                 {t("stats.Trading Volume")}
                             </Text>
                         </Stack>
@@ -373,12 +374,12 @@ export default function SocialProfileSimple() {
                 </Center>
 
 
-                <Wrap spacing='5px' justify='center' mt={6}>
+                <Wrap spacing='6px' justify='center' mt={6}>
                     <Button
                         as="a"
                         href="https://crypto-arsenal.io"
                         target="_blank"
-                        variant={'outline'} leftIcon={<BsGlobe2 />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<BsGlobe2 />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Website</Text>
                         </Center>
@@ -387,7 +388,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://discord.gg/7CceNxrPbw"
                         target="_blank"
-                        variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Discord</Text>
                         </Center>
@@ -396,7 +397,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://twitter.com/_cryptoarsenal_"
                         target="_blank"
-                        variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Twitter</Text>
                         </Center>
@@ -405,7 +406,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://t.me/TG_Crypto_Arsenal"
                         target="_blank"
-                        variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Telegram</Text>
                         </Center>
@@ -414,7 +415,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://www.instagram.com/crypto_arsenal/?hl=en"
                         target="_blank"
-                        variant={'outline'} leftIcon={<BsInstagram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<BsInstagram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Instagram</Text>
                         </Center>
@@ -423,7 +424,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://medium.com/@mkrt.crypto.arsenal"
                         target="_blank"
-                        variant={'outline'} leftIcon={<FaMediumM />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                        variant={'outline'} leftIcon={<FaMediumM />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Medium</Text>
                         </Center>
@@ -458,7 +459,9 @@ export default function SocialProfileSimple() {
                         Follow
                     </Button>
                 </Stack> */}
-                <Divider m="6" />
+                <Box m={6}>
+                    <Divider />
+                </Box>
                 <Center>
                     <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' >
                         <Box w={'full'}>

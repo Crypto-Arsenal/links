@@ -26,6 +26,7 @@ const LanguagesButton = () => {
   return (
     <Menu>
       <MenuButton
+        size="sm"
         as={Button}
         colorScheme='brand'
         rightIcon={<CountryFlag lang={i18n.language} />}
