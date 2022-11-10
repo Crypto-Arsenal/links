@@ -171,7 +171,6 @@ const ExpandableButton = () => {
 
     return (
         <Box
-
             boxShadow={
                 '0px 1px 25px -5px rgb(63 115 255 / 49%), 0 10px 10px -5px rgb(63 115 255 / 49%)'
             }
@@ -293,7 +292,8 @@ export default function SocialProfileSimple() {
                 bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
                 rounded={'lg'}
-                p={6}
+                p={4}
+                pb={6}
                 textAlign={'center'}>
                 <Box
                     bg={`url(${banner})`}
@@ -375,7 +375,7 @@ export default function SocialProfileSimple() {
                 </Center>
 
 
-                <Wrap spacing='4px' justify='center' mt={6}>
+                <Wrap spacing='2px' justify='center' mt={6}>
                     <Button
                         as="a"
                         href="https://crypto-arsenal.io"
