@@ -307,7 +307,7 @@ export default function SocialProfileSimple() {
                     src={
                         '/assets/images/ca.png'
                     }
-                    alt={'Avatar Alt'}
+                    // alt={'Avatar Alt'}
                     mb={4}
                     pos={'relative'}
                 // _after={{
