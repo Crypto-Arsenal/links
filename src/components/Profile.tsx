@@ -113,6 +113,16 @@ const ExpandableMeetTaipieButton = () => {
                                 <ListItem>
                                     <ListIcon as={CheckIcon} color="green.400" />
                                     {t("meetTaipei.Exclusive Access to Alex's strategy")}
+                                    <Button
+                                        ml={2}
+                                        as="a"
+                                        href="https://t.me/c/1474644917/948185"
+                                        target="_blank"
+                                        variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                                        <Center>
+                                            <Text>Alex's Telegram</Text>
+                                        </Center>
+                                    </Button>
 
                                 </ListItem>
                             </List>
@@ -136,7 +146,7 @@ const ExpandableMeetTaipieButton = () => {
                             >
                                 {t("meetTaipei.Join Discord")}
                             </Button>
-                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}  <Badge bg='#5a75d8' color="white" ml={2}> <Text fontWeight={'semibold'}>-meet ca  </Text>  </Badge></Text>
+                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}   <Code fontWeight={'semibold'}>/meetca </Code> </Text>
                             {/* <Button
                                 as="a"
                                 href="https://www.yourator.co/companies/Crypto-Arsenal"
@@ -466,7 +476,7 @@ export default function SocialProfileSimple() {
                 <Center>
                     <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' >
                         <Box w={'full'}>
-                            <Box fontWeight="extrabold" fontSize={'xl'}> <Text color="#e3007f"> Meet Taipei 2022 </Text> </Box>
+                            <Box fontWeight="extrabold" fontSize={'xl'}> <Text color="#e3007f"> {t("meetTaipei.Meet Taipei 2022")} </Text> </Box>
                             <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' mt={'20px'} >
                                 <ExpandableMeetTaipieButton />
                             </Stack>
@@ -488,7 +498,7 @@ export default function SocialProfileSimple() {
                             </Box>
                         </Flex> */}
                         <Box w={'full'}>
-                            <Box fontWeight="extrabold" fontSize={'xl'} > <Text color="#3F73FF"> Work with Us </Text> </Box>
+                            <Box fontWeight="extrabold" fontSize={'xl'} > <Text color="#3F73FF"> {t("job.Work with Us")} </Text> </Box>
                             <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' mt={'20px'} >
                                 <ExpandableButton />
                             </Stack>

@@ -6,6 +6,7 @@ export const zh_TW = {
     'Trading Volume': '總交易量',
   },
   job: {
+    'Work with Us': '徵才職缺',
     'Join our Wordclass Team': '加入我們國際頂尖團隊',
     'Quant Intership': '量化交易實習生',
     'Backend Internship': '後端實習生',
@@ -13,11 +14,12 @@ export const zh_TW = {
     'Marketing Internship': '行銷實習生',
   },
   meetTaipei: {
+    'Meet Taipei 2022': '2022 台大創新創業嘉年華',
     title: '專屬你的禮物',
     '1 month of free Starter subscription':
       '一個月的免費Starter訂閱 (價值 29 USD)',
     "Exclusive Access to Alex's strategy":
-      '得到獨家權限去跟Trader Alex的量化策略',
+      '得到獨家權限去跟Trader Alex聯盟上架的量化策略',
     'Join Discord': '加入Discord',
     'and Text': '並且傳 ',
   },

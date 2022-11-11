@@ -7,6 +7,7 @@ export const en_US = {
     'Trading Volume': 'Trading Volume',
   },
   job: {
+    'Work with Us': 'Work with Us',
     'Join our Wordclass Team': 'Join our Wordclass Team',
     'Quant Intership': 'Quant Intership',
     'Backend Internship': 'Backend Internship',
@@ -14,12 +15,13 @@ export const en_US = {
     'Marketing Internship': 'Marketing Internship',
   },
   meetTaipei: {
+    'Meet Taipei 2022': '2022 台大創新創業嘉年華',
     title: 'Exclusive Gifts for You',
     '1 month of free Starter subscription':
       '1 month of free Starter subscription (29 USD)',
     "Exclusive Access to Alex's strategy":
-      "Exclusive Access to Alex's strategy",
+      "Exclusive Access to strategies from Alex's trading league",
     'Join Discord': 'Join Discord',
-    'and Text': 'and Text',
+    'and Text': 'and text',
   },
 };
