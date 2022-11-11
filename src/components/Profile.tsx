@@ -369,7 +369,7 @@ export default function SocialProfileSimple() {
                             </Text>
                         </Stack>
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>5.4</Text>
+                            <Text fontWeight={600}>5.4k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Users")}
                             </Text>
