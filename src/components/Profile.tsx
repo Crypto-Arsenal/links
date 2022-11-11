@@ -113,30 +113,31 @@ const ExpandableMeetTaipieButton = () => {
                                 <ListItem>
                                     <ListIcon as={CheckIcon} color="green.400" />
                                     {t("meetTaipei.Exclusive Access to Alex's strategy")}
-                                    <Button
-                                        ml={2}
-                                        as="a"
-                                        href="https://crypto-arsenal.io/?ref=Trader-Alex"
-                                        target="_blank"
-                                        colorScheme={'yellow'}
-                                        variant={'outline'} leftIcon={<BsLink />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
-                                        <Center>
-                                            <Text>Alex&apos;s Sign Up Link</Text>
-                                        </Center>
-                                    </Button>
-                                    <Button
-                                        ml={2}
-                                        as="a"
-                                        href="https://t.me/c/1474644917/948185"
-                                        target="_blank"
-                                        colorScheme={'blue'}
-                                        variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
-                                        <Center>
-                                            <Text>Alex&apos;s Telegram</Text>
-                                        </Center>
-                                    </Button>
+
 
                                 </ListItem>
+                                <Button
+                                    ml={2}
+                                    as="a"
+                                    href="https://crypto-arsenal.io/?ref=Trader-Alex"
+                                    target="_blank"
+                                    colorScheme={'yellow'}
+                                    variant={'outline'} leftIcon={<BsLink />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                                    <Center>
+                                        <Text>Alex&apos;s Sign Up Link</Text>
+                                    </Center>
+                                </Button>
+                                <Button
+                                    ml={2}
+                                    as="a"
+                                    href="https://t.me/c/1474644917/948185"
+                                    target="_blank"
+                                    colorScheme={'blue'}
+                                    variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                                    <Center>
+                                        <Text>Alex&apos;s Telegram</Text>
+                                    </Center>
+                                </Button>
                             </List>
                             <Button
                                 as="a"
