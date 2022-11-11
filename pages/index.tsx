@@ -23,7 +23,7 @@ import { ImSphere } from 'react-icons/im';
 import { GITHUB_PROFILE, WEBSITE } from 'src/constants';
 import moon from 'public/assets/images/moon.png'
 import { useEffect } from 'react';
-import { useAnalytics } from '@/utils/analytics';
+import { useAnalytics } from '../src/utils/analytics';
 const IndexPage = () => {
   const { t } = useTranslation();
   const { analytics } = useAnalytics()
