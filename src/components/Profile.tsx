@@ -146,7 +146,7 @@ const ExpandableMeetTaipieButton = () => {
                             >
                                 {t("meetTaipei.Join Discord")}
                             </Button>
-                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}   <Code fontWeight={'semibold'}>/meetca </Code> </Text>
+                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}   <Code fontWeight={'semibold'}>/meetca </Code> to receive steps & gift code 🎁 </Text>
                             {/* <Button
                                 as="a"
                                 href="https://www.yourator.co/companies/Crypto-Arsenal"
