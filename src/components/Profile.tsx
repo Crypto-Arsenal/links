@@ -120,7 +120,7 @@ const ExpandableMeetTaipieButton = () => {
                                         target="_blank"
                                         variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
                                         <Center>
-                                            <Text>Alex's Telegram</Text>
+                                            <Text>Alex&apos;s Telegram</Text>
                                         </Center>
                                     </Button>
 
