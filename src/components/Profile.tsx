@@ -121,7 +121,7 @@ const ExpandableMeetTaipieButton = () => {
                                     as="a"
                                     href="https://crypto-arsenal.io/?ref=Trader-Alex"
                                     target="_blank"
-                                    colorScheme={'yellow'}
+                                    colorScheme={'purple'}
                                     variant={'outline'} leftIcon={<BsLink />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
                                     <Center>
                                         <Text>Alex&apos;s Sign Up Link</Text>
