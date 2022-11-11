@@ -35,7 +35,7 @@ import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, F
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
 
-import { BsCaretDown, BsFileWordFill, BsGiftFill, BsGlobe2, BsInstagram, BsJournalBookmark, BsPeople, BsPeopleFill, BsTelegram } from 'react-icons/bs';
+import { BsCaretDown, BsFileWordFill, BsGiftFill, BsGlobe, BsGlobe2, BsInstagram, BsJournalBookmark, BsLink, BsPeople, BsPeopleFill, BsTelegram } from 'react-icons/bs';
 import { ImInstagram } from 'react-icons/im';
 import { CheckIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
@@ -116,8 +116,20 @@ const ExpandableMeetTaipieButton = () => {
                                     <Button
                                         ml={2}
                                         as="a"
+                                        href="https://crypto-arsenal.io/?ref=Trader-Alex"
+                                        target="_blank"
+                                        colorScheme={'yellow'}
+                                        variant={'outline'} leftIcon={<BsLink />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
+                                        <Center>
+                                            <Text>Alex&apos;s Sign Up Link</Text>
+                                        </Center>
+                                    </Button>
+                                    <Button
+                                        ml={2}
+                                        as="a"
                                         href="https://t.me/c/1474644917/948185"
                                         target="_blank"
+                                        colorScheme={'blue'}
                                         variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
                                         <Center>
                                             <Text>Alex&apos;s Telegram</Text>
