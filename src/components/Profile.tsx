@@ -303,7 +303,7 @@ export default function SocialProfileSimple() {
                 boxShadow={'2xl'}
                 rounded={'lg'}
                 p={4}
-                pb={6}
+                pb={8}
                 textAlign={'center'}>
                 <Box
                     bg={`url(${banner})`}

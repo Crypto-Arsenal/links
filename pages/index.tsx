@@ -22,8 +22,15 @@ import { FiExternalLink } from 'react-icons/fi';
 import { ImSphere } from 'react-icons/im';
 import { GITHUB_PROFILE, WEBSITE } from 'src/constants';
 import moon from 'public/assets/images/moon.png'
+import { useEffect } from 'react';
+import { useAnalytics } from '@/utils/analytics';
 const IndexPage = () => {
   const { t } = useTranslation();
+  const { analytics } = useAnalytics()
+
+  useEffect(() => {
+    analytics.page('Links')
+  }, [])
 
   return (
     <PageLayout
