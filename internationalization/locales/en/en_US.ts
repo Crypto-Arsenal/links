@@ -23,5 +23,6 @@ export const en_US = {
       "Exclusive Access to strategies from Alex's trading league",
     'Join Discord': 'Join Discord',
     'and Text': 'and text',
+    'to receive steps & gift code': 'to receive steps & gift code',
   },
 };

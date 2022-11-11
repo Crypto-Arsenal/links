@@ -22,5 +22,6 @@ export const zh_TW = {
       '得到獨家權限去跟Trader Alex聯盟上架的量化策略',
     'Join Discord': '加入Discord',
     'and Text': '並且傳 ',
+    'to receive steps & gift code': '去領取禮物碼',
   },
 };
