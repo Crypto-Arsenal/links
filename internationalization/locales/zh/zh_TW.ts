@@ -14,7 +14,7 @@ export const zh_TW = {
     'Marketing Internship': '行銷實習生',
   },
   meetTaipei: {
-    'Meet Taipei 2022': '2022 台大創新創業嘉年華',
+    'Meet Taipei 2022': '2022 Meet Taipei 創新創業嘉年華',
     title: '專屬你的禮物',
     '1 month of free Starter subscription':
       '一個月的免費Starter訂閱 (價值 29 USD)',

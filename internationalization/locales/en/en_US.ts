@@ -15,7 +15,7 @@ export const en_US = {
     'Marketing Internship': 'Marketing Internship',
   },
   meetTaipei: {
-    'Meet Taipei 2022': '2022 台大創新創業嘉年華',
+    'Meet Taipei 2022': '2022 Meet Taipei Startup Festival',
     title: 'Exclusive Gifts for You',
     '1 month of free Starter subscription':
       '1 month of free Starter subscription (29 USD)',
