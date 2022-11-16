@@ -29,9 +29,9 @@ import {
     ListIcon,
     ListItem
 } from '@chakra-ui/react';
-import { TbMathFunction } from 'react-icons/tb'
+import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
-import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaTelegram, FaTwitter } from 'react-icons/fa';
+import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
 
@@ -105,28 +105,92 @@ const ExpandableMeetTaipieButton = () => {
                     <Divider />
                     <Box m={1}>
                         <Box bg={useColorModeValue('gray.50', 'gray.900')} px={2} py={3}>
-                            <List spacing={2}>
-                                <ListItem>
-                                    <ListIcon as={CheckIcon} color="green.400" />
-                                    {t("meetTaipei.1 month of free Starter subscription")}
+                            <List spacing={5}>
+                                <ListItem mt={4}>
+                                    <Text fontWeight={'bold'}> Step 1️⃣: {t("meetTaipei.Join Discord and Receive Gift Code")}</Text>
+                                    <Button
+                                        size={'sm'}
+                                        // variant={'outline'}
+                                        as="a"
+                                        href="https://discord.gg/7CceNxrPbw"
+                                        target={"_blank"}
+                                        mt={2}
+                                        mb={1}
+                                        // w={'full'}
+                                        bg={'rgb(114,137,218)'}
+                                        color={'white'}
+                                        rounded={'md'}
+                                        boxShadow={'0 5px 20px 0px rgb(114 137 218 / 43%)'}
+                                        _hover={{
+                                            bg: '#637ddb',
+                                        }}
+                                        _focus={{
+                                            bg: '#637ddb',
+                                        }}
+                                        leftIcon={<FaDiscord />}
+                                    >
+                                        {t("meetTaipei.Join Discord")} {t("meetTaipei.and Text")} <Code fontWeight={'semibold'} color="white">/meetca </Code>
+                                    </Button>
+                                    <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")} 🎁 </Text>
+
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon as={CheckIcon} color="green.400" />
-                                    {t("meetTaipei.Exclusive Access to Alex's strategy")}
+                                    <Text fontWeight={'bold'} fontSize={'md'}> Step 2️⃣:  {t("meetTaipei.Sign Up and Unlock Starter Plan")} </Text>
 
+                                    {/* <ListIcon as={TbNumber1} color="green.400" fontWeight={'bold'} bg="green" /> */}
+                                    <Button
+                                        mt={2}
+                                        mb={1}
+                                        as="a"
+                                        href="https://crypto-arsenal.io/?ref=Trader-Alex"
+                                        target="_blank"
+                                        colorScheme={'green'}
+                                        boxShadow={'0 5px 20px 0px rgb(154 230 180 / 43%)'}
+                                        // variant={'outline'}
+                                        leftIcon={<BsLink />}
+                                        // bg={useColorModeValue('gray.50', 'gray.800')}
+                                        size={'sm'}>
+                                        <Center>
+                                            <Text> {t("meetTaipei.Your Sign Up Link")} </Text>
+                                        </Center>
+                                    </Button>
+                                    <Text fontWeight={'normal'} fontSize={'md'}> {t("meetTaipei.Register and redeem the Gift Code")}  (<Link target="_blank" href="https://help.crypto-arsenal.io/en/articles/6576020-how-to-redeem-gift-code" color={'yellow'}>{t("meetTaipei.see tutorial")}</Link>)  </Text>
 
                                 </ListItem>
-                                <Button
-                                    ml={2}
-                                    as="a"
-                                    href="https://crypto-arsenal.io/?ref=Trader-Alex"
-                                    target="_blank"
-                                    colorScheme={'purple'}
-                                    variant={'outline'} leftIcon={<BsLink />} bg={useColorModeValue('gray.50', 'gray.800')} size={'xs'}>
-                                    <Center>
-                                        <Text>Alex&apos;s Sign Up Link</Text>
-                                    </Center>
-                                </Button>
+                                <ListItem>
+                                    <Text fontWeight={'bold'} fontSize={'md'}> Step 3️⃣: {t("meetTaipei.Trade with the Pros")}   </Text>
+
+                                    {/* <ListIcon as={TbNumber1} color="green.400" fontWeight={'bold'} bg="green" /> */}
+                                    <Button
+                                        mt={2}
+                                        mb={1}
+                                        as="a"
+                                        href="https://crypto-arsenal.io/arena?tab=Trader%20Alex"
+                                        target="_blank"
+                                        colorScheme={'pink'}
+                                        boxShadow={'0 5px 20px 0px rgb(251 182 206 / 43%)'}
+                                        // variant={'outline'}
+                                        leftIcon={<FaRobot />}
+                                        // bg={useColorModeValue('gray.50', 'gray.800')}
+                                        size={'sm'}>
+                                        <Center>
+                                            <Text>{t("meetTaipei.Visit Arena")}</Text>
+                                        </Center>
+                                    </Button>
+                                    <Text fontWeight={'normal'} fontSize={'md'}> {t("meetTaipei.Trade with the best strategies from Alex's Trading League")}  (<Link target="_blank" href="https://youtu.be/RCni_smvI90" color={'pink'}>{t("meetTaipei.see tutorial")}</Link>) </Text>
+
+                                </ListItem>
+
+
+                                {/* 
+
+
+                                <ListItem>
+                                    Recieve Gift Code for Free Starter subscription ($29 USD value) 🎁
+                                 
+                                </ListItem>
+                                3️⃣ On Arena, you will find exclusive access to strategies from Alex's Trading League 🤖
+
                                 <Button
                                     ml={2}
                                     as="a"
@@ -137,9 +201,9 @@ const ExpandableMeetTaipieButton = () => {
                                     <Center>
                                         <Text>Alex&apos;s Telegram</Text>
                                     </Center>
-                                </Button>
+                                </Button> */}
                             </List>
-                            <Button
+                            {/* <Button
                                 as="a"
                                 href="https://discord.gg/7CceNxrPbw"
                                 target={"_blank"}
@@ -158,8 +222,7 @@ const ExpandableMeetTaipieButton = () => {
                                 leftIcon={<FaDiscord />}
                             >
                                 {t("meetTaipei.Join Discord")}
-                            </Button>
-                            <Text mt={1} fontWeight={'semibold'}> {t("meetTaipei.and Text")}   <Code fontWeight={'semibold'}>/meetca </Code> {t("meetTaipei.to receive steps & gift code")} 🎁 </Text>
+                            </Button> */}
                             {/* <Button
                                 as="a"
                                 href="https://www.yourator.co/companies/Crypto-Arsenal"
@@ -430,6 +493,7 @@ export default function SocialProfileSimple() {
                         as="a"
                         href="https://t.me/TG_Crypto_Arsenal"
                         target="_blank"
+
                         variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Telegram</Text>

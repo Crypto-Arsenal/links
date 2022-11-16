@@ -16,13 +16,22 @@ export const en_US = {
   },
   meetTaipei: {
     'Meet Taipei 2022': '2022 Meet Taipei Startup Festival',
+    'Join Discord and Receive Gift Code': 'Join Discord and Receive Gift Code',
+    'Sign Up and Unlock Starter Plan': 'Sign Up and Unlock Starter Plan',
+    'Your Sign Up Link': 'Your Sign Up Link',
     title: 'Exclusive Gifts for You',
+    'see tutorial': 'see tutorial',
+    "Trade with the best strategies from Alex's Trading League":
+      "Trade with the best strategies from Alex's Trading League",
+    'Trade with the Pros': 'Trade with the Pros',
+    'Visit Arena': 'Visit Arena',
     '1 month of free Starter subscription':
       '1 month of free Starter subscription (29 USD)',
     "Exclusive Access to Alex's strategy":
       "Exclusive Access to strategies from Alex's Trading League",
     'Join Discord': 'Join Discord',
     'and Text': 'and text',
-    'to receive steps & gift code': 'to receive steps & gift code',
+    'to receive steps & gift code':
+      'For a month of Free Starter subscription ($29 USD value) - redeem before 11/30',
   },
 };
