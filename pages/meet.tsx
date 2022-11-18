@@ -2,8 +2,8 @@ import PageLayout from '@/components/page-layout';
 import { Box, Button, Center, Code, Divider, Editable, EditableInput, EditablePreview, Flex, Heading, Input, Link, List, ListItem, Text, useClipboard, useColorModeValue, VStack } from '@chakra-ui/react';
 import { t } from 'i18next';
 import NextLink from 'next/link';
-import { BsLink } from 'react-icons/bs';
-import { FaDiscord, FaRobot } from 'react-icons/fa';
+import { BsInstagram, BsLink, BsTelegram } from 'react-icons/bs';
+import { FaDiscord, FaRobot, FaTwitter } from 'react-icons/fa';
 
 const Meet = () => {
   const placeholder = "text to be copied...";
@@ -15,31 +15,47 @@ const Meet = () => {
           <List spacing={5}>
             <ListItem mt={4}>
               <Text fontWeight={'bold'}> Step 1️⃣: {t("meetTaipei.Join Discord and Receive Gift Code")}</Text>
-              <Button
-                size={'sm'}
-                // variant={'outline'}
-                as="a"
-                href="https://discord.gg/DfVSwYprvK"
-                target={"_blank"}
-                mt={2}
-                mb={1}
-                // w={'full'}
-                bg={'rgb(114,137,218)'}
-                color={'white'}
-                rounded={'md'}
-                boxShadow={'0 5px 20px 0px rgb(114 137 218 / 43%)'}
-                _hover={{
-                  bg: '#637ddb',
-                }}
-                _focus={{
-                  bg: '#637ddb',
-                }}
-                leftIcon={<FaDiscord />}
-              >
-                {t("meetTaipei.Join Discord")} {t("meetTaipei.and Text")} <Code fontWeight={'semibold'} color="white">/meetca </Code>
-              </Button>
-              <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")} 🎁 </Text>
-              <Code>meettaipei2022</Code>
+              <Box my={3}>
+                <Button
+                  as="a"
+                  href="https://discord.gg/7CceNxrPbw"
+                  target="_blank"
+                  variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                  <Center>
+                    <Text>Discord</Text>
+                  </Center>
+                </Button>
+                <Button
+                  as="a"
+                  href="https://twitter.com/_cryptoarsenal_"
+                  target="_blank"
+                  variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                  <Center>
+                    <Text>Twitter</Text>
+                  </Center>
+                </Button>
+                <Button
+                  as="a"
+                  href="https://t.me/TG_Crypto_Arsenal"
+                  target="_blank"
+
+                  variant={'outline'} leftIcon={<BsTelegram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                  <Center>
+                    <Text>Telegram</Text>
+                  </Center>
+                </Button>
+                <Button
+                  as="a"
+                  href="https://www.instagram.com/crypto_arsenal/?hl=en"
+                  target="_blank"
+                  variant={'outline'} leftIcon={<BsInstagram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                  <Center>
+                    <Text>Instagram</Text>
+                  </Center>
+                </Button>
+              </Box>
+              <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")}  </Text>
+              🎁 <Code>meettaipei2022</Code>
               <Button size="sm" onClick={onCopy}>{hasCopied ? "Copied!" : "Copy"}</Button>
 
             </ListItem>
