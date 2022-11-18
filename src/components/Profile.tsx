@@ -131,7 +131,7 @@ const ExpandableMeetTaipieButton = () => {
                                     >
                                         {t("meetTaipei.Join Discord")} {t("meetTaipei.and Text")} <Code fontWeight={'semibold'} color="white">/meetca </Code>
                                     </Button>
-                                    <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")} 🎁 </Text>
+                                    <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")} 🎁  (<Link href="/meet" color={'blue'}>{"no Discord?"}</Link>) </Text>
 
                                 </ListItem>
                                 <ListItem>
