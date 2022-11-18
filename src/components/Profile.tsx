@@ -112,7 +112,7 @@ const ExpandableMeetTaipieButton = () => {
                                         size={'sm'}
                                         // variant={'outline'}
                                         as="a"
-                                        href="https://discord.gg/7CceNxrPbw"
+                                        href="https://discord.gg/DfVSwYprvK"
                                         target={"_blank"}
                                         mt={2}
                                         mb={1}
