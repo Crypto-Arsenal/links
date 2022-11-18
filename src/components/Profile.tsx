@@ -58,7 +58,7 @@ const pulseRing = keyframes`
 	`;
 
 const ExpandableMeetTaipieButton = () => {
-    const { isOpen, onToggle } = useDisclosure()
+    const { isOpen, onToggle } = useDisclosure({ isOpen: true })
     const { t } = useTranslation()
 
     return (

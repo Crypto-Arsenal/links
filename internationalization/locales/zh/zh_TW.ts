@@ -15,7 +15,7 @@ export const zh_TW = {
   },
   meetTaipei: {
     'Meet Taipei 2022': '2022 Meet Taipei 創新創業嘉年華',
-    'Join Discord and Receive Gift Code': '加入Discord去領取禮物碼',
+    'Join Discord and Receive Gift Code': '加入Discord去領取禮物碼或追蹤IG',
     'Sign Up and Unlock Starter Plan': '註冊並解鎖Starter訂閱',
     'Your Sign Up Link': '你的專屬註冊連結',
     'Register and redeem the Gift Code': '註冊並兌換禮品碼去解鎖訂閱',
