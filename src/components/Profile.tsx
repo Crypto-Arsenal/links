@@ -139,7 +139,7 @@ const ExpandableMeetTaipieButton = () => {
                                     </Button>
 
                                     {/* <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")}  </Text> */}
-                                    <Box my={1}>
+                                    <Wrap spacing={1} justify='center' mt={1}>
                                         <Button
                                             mr={1}
                                             rounded={'md'}
@@ -175,7 +175,7 @@ const ExpandableMeetTaipieButton = () => {
                                             rounded={'md'}
                                             onClick={on}
                                             as="a"
-                                            href="https://www.instagram.com/crypto_arsenal/?hl=en"
+                                            href="https://www.instagram.com/crypto_arsenal_official/?hl=en"
                                             target="_blank"
                                             colorScheme={'red'}
                                             // variant={'outline'}
@@ -186,7 +186,7 @@ const ExpandableMeetTaipieButton = () => {
                                                 <Text>Instagram</Text>
                                             </Center>
                                         </Button>
-                                    </Box>
+                                    </Wrap>
                                     <Box>
                                         {isClicked ? "🎁" : "🔐"}  <Code>{isClicked ? 'meettaipei2022' : '********'} </Code>
                                         <Button size="sm" onClick={onCopy} disabled={!isClicked}>{hasCopied ? "Copied!" : (isClicked ? "Copy" : "追蹤去解鎖 👆")}</Button>
@@ -561,7 +561,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://www.instagram.com/crypto_arsenal/?hl=en"
+                        href="https://www.instagram.com/crypto_arsenal_official/?hl=en"
                         target="_blank"
                         variant={'outline'} leftIcon={<BsInstagram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
