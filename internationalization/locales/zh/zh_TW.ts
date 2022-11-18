@@ -15,7 +15,7 @@ export const zh_TW = {
   },
   meetTaipei: {
     'Meet Taipei 2022': '2022 Meet Taipei 創新創業嘉年華',
-    'Join Discord and Receive Gift Code': '加入Discord去領取禮物碼或追蹤IG',
+    'Join Discord and Receive Gift Code': '加入Discord或追蹤社群去解鎖禮物碼',
     'Sign Up and Unlock Starter Plan': '註冊並解鎖Starter訂閱',
     'Your Sign Up Link': '你的專屬註冊連結',
     'Register and redeem the Gift Code': '註冊並兌換禮品碼去解鎖訂閱',
@@ -32,6 +32,6 @@ export const zh_TW = {
     'Join Discord': '加入Discord',
     'and Text': '並且傳 ',
     'to receive steps & gift code':
-      '去得到一個月的免費入門訂閱（價值 29 美元）- 在 11 月 30 日之前兌換',
+      '追蹤去得到一個月的免費入門訂閱（價值 29 美元）- 在 11 月 30 日之前兌換',
   },
 };

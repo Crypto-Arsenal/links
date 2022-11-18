@@ -18,9 +18,10 @@ const Meet = () => {
               <Box my={3}>
                 <Button
                   as="a"
-                  href="https://discord.gg/7CceNxrPbw"
+                  href="https://discord.gg/DfVSwYprvK"
                   target="_blank"
-                  variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                  // variant={'outline'}
+                  leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                   <Center>
                     <Text>Discord</Text>
                   </Center>
@@ -29,6 +30,7 @@ const Meet = () => {
                   as="a"
                   href="https://twitter.com/_cryptoarsenal_"
                   target="_blank"
+                  colorScheme={'twitter'}
                   variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                   <Center>
                     <Text>Twitter</Text>
@@ -73,6 +75,7 @@ const Meet = () => {
                 boxShadow={'0 5px 20px 0px rgb(154 230 180 / 43%)'}
                 // variant={'outline'}
                 leftIcon={<BsLink />}
+
                 // bg={useColorModeValue('gray.50', 'gray.800')}
                 size={'sm'}>
                 <Center>

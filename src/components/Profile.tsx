@@ -27,7 +27,9 @@ import {
     Collapse,
     List,
     ListIcon,
-    ListItem
+    ListItem,
+    useClipboard,
+    HStack
 } from '@chakra-ui/react';
 import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
@@ -59,7 +61,10 @@ const pulseRing = keyframes`
 
 const ExpandableMeetTaipieButton = () => {
     const { isOpen, onToggle } = useDisclosure({ isOpen: true })
+    const [isClicked, { on }] = useBoolean()
+
     const { t } = useTranslation()
+    const { onCopy, value, setValue, hasCopied } = useClipboard("meettaipei2022");
 
     return (
         <Box
@@ -116,6 +121,7 @@ const ExpandableMeetTaipieButton = () => {
                                         target={"_blank"}
                                         mt={2}
                                         mb={1}
+                                        onClick={on}
                                         // w={'full'}
                                         bg={'rgb(114,137,218)'}
                                         color={'white'}
@@ -131,7 +137,61 @@ const ExpandableMeetTaipieButton = () => {
                                     >
                                         {t("meetTaipei.Join Discord")} {t("meetTaipei.and Text")} <Code fontWeight={'semibold'} color="white">/meetca </Code>
                                     </Button>
-                                    <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")} 🎁  (<Link href="/meet" color={'blue'}>{"no Discord?"}</Link>) </Text>
+
+                                    {/* <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")}  </Text> */}
+                                    <Box my={1}>
+                                        <Button
+                                            mr={1}
+                                            rounded={'md'}
+                                            onClick={on}
+                                            as="a"
+                                            href="https://twitter.com/_cryptoarsenal_"
+                                            target="_blank"
+                                            colorScheme={'twitter'}
+                                            // variant={'outline'}
+                                            leftIcon={<FaTwitter />} size={'sm'}>
+                                            <Center>
+                                                <Text>Twitter</Text>
+                                            </Center>
+                                        </Button>
+                                        <Button
+                                            mr={1}
+                                            rounded={'md'}
+                                            onClick={on}
+                                            as="a"
+                                            href="https://t.me/TG_Crypto_Arsenal"
+                                            target="_blank"
+                                            colorScheme={'telegram'}
+                                            // variant={'outline'}
+                                            leftIcon={<BsTelegram />}
+                                            // bg={useColorModeValue('gray.50', 'gray.800')}
+                                            size={'sm'}>
+                                            <Center>
+                                                <Text>Telegram</Text>
+                                            </Center>
+                                        </Button>
+                                        <Button
+                                            mr={1}
+                                            rounded={'md'}
+                                            onClick={on}
+                                            as="a"
+                                            href="https://www.instagram.com/crypto_arsenal/?hl=en"
+                                            target="_blank"
+                                            colorScheme={'red'}
+                                            // variant={'outline'}
+                                            leftIcon={<BsInstagram />}
+                                            // bg={useColorModeValue('gray.50', 'gray.800')}
+                                            size={'sm'}>
+                                            <Center>
+                                                <Text>Instagram</Text>
+                                            </Center>
+                                        </Button>
+                                    </Box>
+                                    <Box>
+                                        {isClicked ? "🎁" : "🔐"}  <Code>{isClicked ? 'meettaipei2022' : '********'} </Code>
+                                        <Button size="sm" onClick={onCopy} disabled={!isClicked}>{hasCopied ? "Copied!" : (isClicked ? "Copy" : "追蹤去解鎖 👆")}</Button>
+                                    </Box>
+                                    <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")}  </Text>
 
                                 </ListItem>
                                 <ListItem>
@@ -473,7 +533,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://discord.gg/7CceNxrPbw"
+                        href="https://discord.gg/DfVSwYprvK"
                         target="_blank"
                         variant={'outline'} leftIcon={<FaDiscord />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
