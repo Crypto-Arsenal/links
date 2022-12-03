@@ -60,7 +60,7 @@ const pulseRing = keyframes`
 	`;
 
 const ExpandableMeetTaipieButton = () => {
-    const { isOpen, onToggle } = useDisclosure({ isOpen: true })
+    const { isOpen, onToggle } = useDisclosure()
     const [isClicked, { on }] = useBoolean()
 
     const { t } = useTranslation()
@@ -189,7 +189,7 @@ const ExpandableMeetTaipieButton = () => {
                                     </Wrap>
                                     <Box>
                                         {isClicked ? "🎁" : "🔐"}  <Code>{isClicked ? 'meettaipei2022' : '********'} </Code>
-                                        <Button size="sm" onClick={onCopy} disabled={!isClicked}>{hasCopied ? "Copied!" : (isClicked ? "Copy" : "追蹤去解鎖 👆")}</Button>
+                                        <Button size="sm" onClick={onCopy} disabled={!isClicked}>{hasCopied ? "Copied!" : (isClicked ? "Copy" : "Follow to unlock 👆")}</Button>
                                     </Box>
                                     <Text fontWeight={'normal'} fontSize={'md'}>  {t("meetTaipei.to receive steps & gift code")}  </Text>
 

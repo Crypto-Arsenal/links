@@ -15,8 +15,8 @@ const resources = {
 export const availableLanguages = Object.keys(resources);
 
 i18n.use(initReactI18next).init({
-  fallbackLng: 'tw',
-  lng: 'tw',
+  fallbackLng: 'us',
+  lng: 'us',
   resources,
 });
 
