@@ -499,20 +499,20 @@ export default function SocialProfileSimple() {
                 <Center mt={4}>
                     <Stack direction={'row'} justify={'center'} spacing={4} ml="15px">
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>1.26k</Text>
+                            <Text fontWeight={600}>1.53k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Trading Bots")}
                             </Text>
                         </Stack>
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>5.4k</Text>
+                            <Text fontWeight={600}>5.5k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Users")}
                             </Text>
                         </Stack>
 
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>28M</Text>
+                            <Text fontWeight={600}>53M</Text>
                             <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                                 {t("stats.Trading Volume")}
                             </Text>
