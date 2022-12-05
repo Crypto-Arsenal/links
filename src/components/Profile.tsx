@@ -612,12 +612,12 @@ export default function SocialProfileSimple() {
                 </Box>
                 <Center>
                     <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' >
-                        <Box w={'full'}>
+                        {/* <Box w={'full'}>
                             <Box fontWeight="extrabold" fontSize={'xl'}> <Text color="#e3007f"> {t("meetTaipei.Meet Taipei 2022")} </Text> </Box>
                             <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' mt={'20px'} >
                                 <ExpandableMeetTaipieButton />
                             </Stack>
-                        </Box>
+                        </Box> */}
                         {/* Facebook */}
                         {/* <Flex
                             flexDir={{ base: 'column', md: 'row' }}
