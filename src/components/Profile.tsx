@@ -33,7 +33,7 @@ import {
 } from '@chakra-ui/react';
 import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
-import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaReddit, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
+import { FaCaretDown, FaCaretUp, FaCode, FaDiscord, FaExpand, FaFacebook, FaInfo, FaInfoCircle, FaInstagram, FaLinkedin, FaMediumM, FaReddit, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
 
@@ -520,7 +520,6 @@ export default function SocialProfileSimple() {
                     </Stack>
                 </Center>
 
-
                 <Wrap spacing='2px' justify='center' mt={6}>
                     <Button
                         as="a"
@@ -531,6 +530,28 @@ export default function SocialProfileSimple() {
                             <Text>Website</Text>
                         </Center>
                     </Button>
+                    <Button
+                        as="a"
+                        href="https://help.crypto-arsenal.io"
+                        target="_blank"
+                        variant={'outline'} leftIcon={<FaInfoCircle />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                        <Center>
+                            <Text>Help Center </Text>
+                        </Center>
+                    </Button>
+                    <Button
+                        as="a"
+                        href={"https://docs.crypto-arsenal.io/"}
+                        target="_blank"
+                        variant={'outline'} leftIcon={<FaCode />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                        <Center>
+                            <Text>Documentation</Text>
+                        </Center>
+                    </Button>
+                </Wrap>
+
+
+                <Wrap spacing='2px' justify='center' mt={6}>
                     <Button
                         as="a"
                         href="https://discord.gg/DfVSwYprvK"
