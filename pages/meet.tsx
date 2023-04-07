@@ -28,7 +28,7 @@ const Meet = () => {
                 </Button>
                 <Button
                   as="a"
-                  href="https://twitter.com/_cryptoarsenal_"
+                  href="https://twitter.com/Cryptoarsena1"
                   target="_blank"
                   colorScheme={'twitter'}
                   variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>

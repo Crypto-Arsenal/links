@@ -1,4 +1,9 @@
 export const zh_TW = {
+  links: {
+    instagram: 'https://www.instagram.com/crypto_arsenal_official',
+    medium: 'https://medium.com/@mkrt.crypto.arsenal',
+    twitter: 'https://twitter.com/CryptoArsenalCN',
+  },
   excerpt: 'afs',
   stats: {
     Users: '用戶',

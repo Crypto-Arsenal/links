@@ -1,4 +1,4 @@
-import { Container, ContainerProps } from '@chakra-ui/react';
+import { Box, Center, Container, ContainerProps } from '@chakra-ui/react';
 import { motion, Variants } from 'framer-motion';
 import { NextSeo } from 'next-seo';
 import { ReactNode } from 'react';
@@ -40,7 +40,7 @@ const PageLayout = ({ title, description, children }: PageProps) => {
         description={description}
         twitter={{
           cardType: 'summary_large_image',
-          handle: '@_cryptoarsenal_',
+          handle: 'CryptoArsena1',
         }}
         openGraph={{
           url: 'https://links.crypto-arsenal.io',
@@ -64,19 +64,20 @@ const PageLayout = ({ title, description, children }: PageProps) => {
           },
         ]}
       />
-      <MotionContainer
+      <Center
         display='flex'
-        maxW='container.lg'
+        // justifyItems={'center'}
+        w="100%"
         minH={{ base: 'auto', md: 'auto' }}
         px={{ base: 4, lg: 8 }}
-        initial='hidden'
-        animate='enter'
-        exit='exit'
-        variants={variants}
-        centerContent
+      // initial='hidden'
+      // animate='enter'
+      // exit='exit'
+      // variants={variants}
+      // centerContent
       >
         {children}
-      </MotionContainer>
+      </Center>
     </>
   );
 };

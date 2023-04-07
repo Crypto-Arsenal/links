@@ -33,7 +33,7 @@ import {
 } from '@chakra-ui/react';
 import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
-import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
+import { FaCaretDown, FaCaretUp, FaDiscord, FaExpand, FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaReddit, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
 
@@ -145,7 +145,7 @@ const ExpandableMeetTaipieButton = () => {
                                             rounded={'md'}
                                             onClick={on}
                                             as="a"
-                                            href="https://twitter.com/_cryptoarsenal_"
+                                            href={t('links.twitter')}
                                             target="_blank"
                                             colorScheme={'twitter'}
                                             // variant={'outline'}
@@ -175,7 +175,7 @@ const ExpandableMeetTaipieButton = () => {
                                             rounded={'md'}
                                             onClick={on}
                                             as="a"
-                                            href="https://www.instagram.com/crypto_arsenal_official/?hl=en"
+                                            href={t('links.instagram')}
                                             target="_blank"
                                             colorScheme={'red'}
                                             // variant={'outline'}
@@ -484,7 +484,7 @@ export default function SocialProfileSimple() {
                 </Heading>
                 <Box mb={4}>
                     <Text fontWeight={'semibold'} color={'gray.500'} as="a" href="https://twitter.com/_cryptoarsenal_">
-                        @_cryptoarsenal_
+                        @CryptoAsrsena1
                     </Text>
                 </Box>
                 <Text
@@ -499,20 +499,20 @@ export default function SocialProfileSimple() {
                 <Center mt={4}>
                     <Stack direction={'row'} justify={'center'} spacing={4} ml="15px">
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>1.53k</Text>
+                            <Text fontWeight={600}>2k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Trading Bots")}
                             </Text>
                         </Stack>
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>5.5k</Text>
+                            <Text fontWeight={600}>6k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
                                 {t("stats.Users")}
                             </Text>
                         </Stack>
 
                         <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>53M</Text>
+                            <Text fontWeight={600}>120M</Text>
                             <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                                 {t("stats.Trading Volume")}
                             </Text>
@@ -542,7 +542,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://twitter.com/_cryptoarsenal_"
+                        href={t('links.twitter')}
                         target="_blank"
                         variant={'outline'} leftIcon={<FaTwitter />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
@@ -561,7 +561,7 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://www.instagram.com/crypto_arsenal_official/?hl=en"
+                        href={t('links.instagram')}
                         target="_blank"
                         variant={'outline'} leftIcon={<BsInstagram />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
@@ -570,11 +570,29 @@ export default function SocialProfileSimple() {
                     </Button>
                     <Button
                         as="a"
-                        href="https://medium.com/@mkrt.crypto.arsenal"
+                        href={t('links.medium')}
                         target="_blank"
                         variant={'outline'} leftIcon={<FaMediumM />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Medium</Text>
+                        </Center>
+                    </Button>
+                    <Button
+                        as="a"
+                        href="https://www.linkedin.com/company/crypto-arsenal"
+                        target="_blank"
+                        variant={'outline'} leftIcon={<FaLinkedin />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                        <Center>
+                            <Text>LinkedIn</Text>
+                        </Center>
+                    </Button>
+                    <Button
+                        as="a"
+                        href="https://www.reddit.com/r/CryptoArsenal"
+                        target="_blank"
+                        variant={'outline'} leftIcon={<FaReddit />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                        <Center>
+                            <Text>Reddit</Text>
                         </Center>
                     </Button>
                 </Wrap>
