@@ -453,7 +453,7 @@ export default function SocialProfileSimple() {
                     border='4px solid'
                     size={'xl'}
                     src={
-                        '/assets/images/ca.png'
+                        '/assets/images/ca1.png'
                     }
                     // alt={'Avatar Alt'}
                     mb={4}
