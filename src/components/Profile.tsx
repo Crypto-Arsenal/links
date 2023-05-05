@@ -33,7 +33,7 @@ import {
 } from '@chakra-ui/react';
 import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb'
 import { FcGlobe, FcGoogle } from 'react-icons/fc';
-import { FaCaretDown, FaCaretUp, FaCode, FaDiscord, FaExpand, FaFacebook, FaInfo, FaInfoCircle, FaInstagram, FaLinkedin, FaMediumM, FaReddit, FaRobot, FaTelegram, FaTwitter } from 'react-icons/fa';
+import { FaCaretDown, FaCaretUp, FaCode, FaDiscord, FaExpand, FaFacebook, FaInfo, FaInfoCircle, FaInstagram, FaLinkedin, FaMediumM, FaReddit, FaRobot, FaTelegram, FaTv, FaTwitter } from 'react-icons/fa';
 import { SiJirasoftware, SiLinkedin, SiMessenger, SiTelegram } from 'react-icons/si';
 import Verified from 'public/assets/images/verified.svg';
 
@@ -494,7 +494,7 @@ export default function SocialProfileSimple() {
                     letterSpacing={'wide'}
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}>
-                    Crypto Bot Marketplace that Bridges the Gap Between Quants and Traders
+                    Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap Between Strategy Creators and Traders
                 </Text>
                 <Center mt={4}>
                     <Stack direction={'row'} justify={'center'} spacing={4} ml="15px">
@@ -614,6 +614,18 @@ export default function SocialProfileSimple() {
                         variant={'outline'} leftIcon={<FaReddit />} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
                         <Center>
                             <Text>Reddit</Text>
+                        </Center>
+                    </Button>
+                    <Button
+                        as="a"
+                        href="https://www.tradingview.com/u/Crypto-Arsenal/"
+                        target="_blank"
+                        variant={'outline'} leftIcon={
+                            <>
+                                <svg width="20" height="20" viewBox="0 0 36 27" xmlns="http://www.w3.org/2000/svg"><path d="M14 22H7V11H0V4h14v18zM28 22h-8l7.5-18h8L28 22z" fill="currentColor"></path><circle cx="20" cy="8" r="4" fill="currentColor"></circle></svg>
+                            </>} bg={useColorModeValue('gray.50', 'gray.800')} size={'sm'}>
+                        <Center>
+                            <Text>TradingView</Text>
                         </Center>
                     </Button>
                 </Wrap>
