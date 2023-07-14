@@ -33,6 +33,8 @@ import Community from '@/components/Community';
 import { useEffect } from 'react';
 import { useAnalytics } from '../src/utils/analytics';
 import { useTranslation } from 'react-i18next';
+import CallToActionWithVideo, { SplitWithImage } from '@/components/CTA';
+import GridListWithCTA from '@/components/GridCTA';
 
 const InternshipPage = () => {
   const { t } = useTranslation();
@@ -194,49 +196,24 @@ const InternshipPage = () => {
           <Box m={6}>
             <Divider />
           </Box>
+
           <Flex
-            textAlign={'center'}
+            // textAlign={'center'}
             justifyContent={'center'}
             direction={'column'}
             width={'full'}
             overflow={'hidden'}
           >
-            <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-              <Heading
-                py={5}
-                fontSize={34}
-                fontFamily={'body'}
-                fontWeight={'bold'}
-                color={useColorModeValue('gray.700', 'gray.50')}
-              >
-                {t('internship.Quantitative Trading Internship')}
-              </Heading>
-              <Button
-                as='a'
-                href='mailto:mkrt.crypto.arsenal@gmail.com'
-                target={'_blank'}
-                mt={1}
-                mb={5}
-                w={'full'}
-                maxW={'3xs'}
-                bg={'blue.400'}
-                color={'white'}
-                rounded={'lg'}
-                boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
-                _hover={{
-                  bg: 'blue.500',
-                }}
-                _focus={{
-                  bg: 'blue.500',
-                }}
-              >
-                Apply Now
-              </Button>
+
+            <Box width={{ base: 'full', sm: 'xl', lg: '3xl' }} margin={'auto'}>
+              <SplitWithImage />
+
+
             </Box>
             <Accordion
               defaultIndex={[0]}
               width='100%'
-              maxW='2xl'
+              maxW='3xl'
               rounded='lg'
               mx={'auto'}
             >
@@ -524,7 +501,8 @@ const InternshipPage = () => {
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
-            <Center>
+
+            {/* <Center>
               <Stack
                 spacing={'40px'}
                 align={'center'}
@@ -559,7 +537,7 @@ const InternshipPage = () => {
                   </Button>
                 </Box>
               </Stack>
-            </Center>
+            </Center> */}
           </Flex>
           <Box m={6}>
             <Divider />
@@ -584,6 +562,7 @@ const InternshipPage = () => {
               </Heading>
             </Box>
             <Flex
+              width={{ base: 'full', sm: 'xl', lg: '4xl' }} margin={'auto'}
               flexWrap='wrap'
               justifyContent='center'
               marginX={`calc(${spacing} / -2)`}
@@ -954,10 +933,74 @@ const InternshipPage = () => {
                   </Stack>
                 </Box>
               </Center>
+              <Center
+                py={12}
+                marginBottom={spacing}
+                _even={{
+                  marginX: spacing,
+                }}
+              >
+                <Box
+                  role={'group'}
+                  p={6}
+                  maxW={'330px'}
+                  w={'200px'}
+                  bg={useColorModeValue('white', 'gray.800')}
+                  boxShadow={'2xl'}
+                  rounded={'lg'}
+                  pos={'relative'}
+                  zIndex={1}
+                >
+                  <Box
+                    rounded={'lg'}
+                    mt={-12}
+                    pos={'relative'}
+                    height={'115px'}
+                    width={'155px'}
+                    _after={{
+                      transition: 'all .3s ease',
+                      content: '""',
+                      w: 'full',
+                      h: 'full',
+                      pos: 'absolute',
+                      top: 3,
+                      left: -5,
+                      backgroundImage: '/assets/images/bca.jpeg',
+                      filter: 'blur(20px)',
+                      zIndex: -1,
+                    }}
+                    _groupHover={{
+                      _after: {
+                        filter: 'blur(20px)',
+                      },
+                    }}
+                  >
+                    <Image
+                      rounded={'lg'}
+                      height={115}
+                      width={155}
+                      objectFit={'contain'}
+                      src={'/assets/images/bca.jpeg'}
+                    />
+                  </Box>
+                  <Stack pt={10} align={'center'}>
+                    <Heading
+                      fontSize={'2xl'}
+                      fontFamily={'body'}
+                      fontWeight={500}
+                    >
+                      BCA
+                    </Heading>
+                  </Stack>
+                </Box>
+              </Center>
             </Flex>
           </Flex>
           <Box m={6}>
             <Divider />
+          </Box>
+          <Box width={{ base: 'full', sm: 'xl', lg: '3xl' }} margin={'auto'}>
+            <GridListWithCTA />
           </Box>
           <Center>
             <Stack
