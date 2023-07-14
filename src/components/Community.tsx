@@ -77,14 +77,16 @@ export default function Community() {
     const { t } = useTranslation();
     return (
         <Wrap spacing='2px' justify='center' mt={6}>
-            {communityList.map((community) => (
+            {communityList.map((community, i) => (
                 <Button
+                    key={i}
                     as='a'
                     href={t(community.href)}
                     target='_blank'
                     variant={'outline'}
                     leftIcon={community.icon}
-                    bg={useColorModeValue('gray.50', 'gray.800')}
+                    bg="gray.50"
+                    _dark={{ bg: "gray.800" }}
                     size={'sm'}
                 >
                     <Center>

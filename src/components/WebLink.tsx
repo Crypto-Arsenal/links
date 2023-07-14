@@ -29,14 +29,16 @@ const webList = [
 export default function WebLink() {
     return (
         <Wrap spacing='2px' justify='center' mt={6}>
-            {webList.map((web) => (
+            {webList.map((web, i) => (
                 <Button
+                    key={i}
                     as='a'
                     href={web.href}
                     target='_blank'
                     variant={'outline'}
                     leftIcon={web.icon}
-                    bg={useColorModeValue('gray.50', 'gray.800')}
+                    bg="gray.50"
+                    _dark={{ bg: "gray.800" }}
                     size={'sm'}
                 >
                     <Center>
