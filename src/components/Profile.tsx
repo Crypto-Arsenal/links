@@ -76,6 +76,7 @@ import { ImInstagram } from 'react-icons/im';
 import { CheckIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
 import Community from '../components/Community';
+import WebLink from './WebLink';
 
 const size = '96px';
 const color = 'teal';
@@ -736,48 +737,9 @@ export default function SocialProfileSimple() {
                     </Stack>
                 </Center>
 
-                <Wrap spacing='2px' justify='center' mt={6}>
-                    <Button
-                        as='a'
-                        href='https://crypto-arsenal.io'
-                        target='_blank'
-                        variant={'outline'}
-                        leftIcon={<BsGlobe2 />}
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        size={'sm'}
-                    >
-                        <Center>
-                            <Text>Website</Text>
-                        </Center>
-                    </Button>
-                    <Button
-                        as='a'
-                        href='https://help.crypto-arsenal.io'
-                        target='_blank'
-                        variant={'outline'}
-                        leftIcon={<FaInfoCircle />}
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        size={'sm'}
-                    >
-                        <Center>
-                            <Text>Help Center </Text>
-                        </Center>
-                    </Button>
-                    <Button
-                        as='a'
-                        href={'https://docs.crypto-arsenal.io/'}
-                        target='_blank'
-                        variant={'outline'}
-                        leftIcon={<FaCode />}
-                        bg={useColorModeValue('gray.50', 'gray.800')}
-                        size={'sm'}
-                    >
-                        <Center>
-                            <Text>Documentation</Text>
-                        </Center>
-                    </Button>
-                </Wrap>
+                <WebLink />  
                 <Community />
+                
                 {/* <Stack mt={8} direction={'row'} spacing={4}>
                     <Button
                         flex={1}
