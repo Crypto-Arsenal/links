@@ -173,12 +173,30 @@ const ExpandableButton = () => {
                                     {t('job.Marketing Internship')}
                                 </ListItem>
                             </List>
-
+                            <Button
+                                as='a'
+                                href='/internship'
+                                mt={10}
+                                w={'full'}
+                                bg={'purple.400'}
+                                color={'white'}
+                                rounded={'xl'}
+                                boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
+                                _hover={{
+                                    bg: 'purple.500',
+                                }}
+                                _focus={{
+                                    bg: 'purple.500',
+                                }}
+                                rightIcon={<ExternalLinkIcon />}
+                            >
+                                校園量化團隊{' '}
+                            </Button>
                             <Button
                                 as='a'
                                 href='https://www.cakeresume.com/companies/crypto-arsenal/jobs'
                                 target={'_blank'}
-                                mt={10}
+                                mt={3}
                                 w={'full'}
                                 bg={'green.400'}
                                 color={'white'}
