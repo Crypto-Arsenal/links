@@ -215,7 +215,7 @@ const InternshipPage = () => {
             <Accordion
               defaultIndex={[0]}
               width='100%'
-              maxW='lg'
+              maxW='2xl'
               rounded='lg'
               mx={'auto'}
             >
@@ -233,7 +233,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -257,7 +257,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -321,7 +321,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -361,7 +361,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -405,7 +405,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -442,7 +442,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
@@ -479,7 +479,7 @@ const InternshipPage = () => {
                 </AccordionButton>
                 <AccordionPanel pb={4}>
                   <Text
-                    fontFamily={'Inter'}
+                    fontFamily={'body'}
                     fontWeight={'medium'}
                     fontSize={'15px'}
                     pb={4}
