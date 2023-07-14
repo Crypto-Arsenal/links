@@ -63,9 +63,9 @@ export function SplitWithImage() {
                     </Text>
                     <Heading textAlign={'left'}>校園量化團隊</Heading>
                     <Text textAlign={'left'} color={'gray.500'} fontSize={'lg'}>
-                        開啟你的量化事業，創造穩定被動收入
                         想學習量化，但沒有資源和不知道從何開始嗎？
                         站上我們提供的舞台，踏上你的量化旅程！
+                        開啟你的量化事業，創造穩定被動收入。
                     </Text>
                     <Stack
                         spacing={4}
