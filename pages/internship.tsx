@@ -125,7 +125,7 @@ const InternshipPage = () => {
             px={3}
           >
             📄 策略開發 & 跟單帶單
-            🔗 八大交易所 API 串接
+            🔗 各大交易所 API 串接
             👨🏻‍💻 TradingView & Python
           </Text>
           <Center mt={4}>
