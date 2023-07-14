@@ -124,8 +124,9 @@ const InternshipPage = () => {
             color={useColorModeValue('gray.700', 'gray.400')}
             px={3}
           >
-            Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap Between
-            Strategy Creators and Traders
+            📄 策略開發 & 跟單帶單
+            🔗 八大交易所 API 串接
+            👨🏻‍💻 TradingView & Python
           </Text>
           <Center mt={4}>
             <Stack direction={'row'} justify={'center'} spacing={4} ml='15px'>
@@ -136,14 +137,14 @@ const InternshipPage = () => {
                 </Text>
               </Stack>
               <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>6k</Text>
+                <Text fontWeight={600}>6.6k</Text>
                 <Text fontSize={'sm'} color={'gray.500'}>
                   {t('stats.Users')}
                 </Text>
               </Stack>
 
               <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>120M</Text>
+                <Text fontWeight={600}>145M</Text>
                 <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                   {t('stats.Trading Volume')}
                 </Text>
@@ -151,7 +152,7 @@ const InternshipPage = () => {
             </Stack>
           </Center>
 
-          <Wrap spacing='2px' justify='center' mt={6}>
+          {/* <Wrap spacing='2px' justify='center' mt={6}>
             <Button
               as='a'
               href='https://crypto-arsenal.io'
@@ -191,8 +192,8 @@ const InternshipPage = () => {
                 <Text>Documentation</Text>
               </Center>
             </Button>
-          </Wrap>
-          <Community />
+          </Wrap> */}
+          {/* <Community /> */}
           <Box m={6}>
             <Divider />
           </Box>
