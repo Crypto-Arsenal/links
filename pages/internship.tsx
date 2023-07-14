@@ -111,7 +111,7 @@ const InternshipPage = () => {
               as='a'
               href='https://twitter.com/_cryptoarsenal_'
             >
-              @CryptoAsrsena1
+              @CryptoArsena1
             </Text>
           </Box>
           <Text
@@ -209,8 +209,29 @@ const InternshipPage = () => {
                 fontWeight={'bold'}
                 color={useColorModeValue('gray.700', 'gray.50')}
               >
-                Quantitative Trading Internship
+                {t('internship.Quantitative Trading Internship')}
               </Heading>
+              <Button
+                as='a'
+                href='mailto:mkrt.crypto.arsenal@gmail.com'
+                target={'_blank'}
+                mt={1}
+                mb={5}
+                w={'full'}
+                maxW={'3xs'}
+                bg={'blue.400'}
+                color={'white'}
+                rounded={'lg'}
+                boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
+                _hover={{
+                  bg: 'blue.500',
+                }}
+                _focus={{
+                  bg: 'blue.500',
+                }}
+              >
+                Apply Now
+              </Button>
             </Box>
             <Accordion
               defaultIndex={[0]}
@@ -503,6 +524,42 @@ const InternshipPage = () => {
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
+            <Center>
+              <Stack
+                spacing={'40px'}
+                align={'center'}
+                w={'full'}
+                justify='center'
+              >
+                <Box w={'full'} mt={5}>
+                  <Box fontWeight='extrabold' fontSize={'xl'}>
+                    <Text color='#3F73FF'>Register Now</Text>
+                  </Box>
+                  <Button
+                    as='a'
+                    href='mailto:mkrt.crypto.arsenal@gmail.com?subject=校園大使_姓名XXX&body=Tell Us About Yourself'
+                    target={'_blank'}
+                    mt={3}
+                    w={'full'}
+                    maxW={'2xl'}
+                    bg={'blue.400'}
+                    color={'white'}
+                    rounded={'xl'}
+                    boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
+                    _hover={{
+                      bg: 'blue.500',
+                    }}
+                    _focus={{
+                      bg: 'blue.500',
+                    }}
+                    leftIcon={<EmailIcon />}
+                    rightIcon={<ExternalLinkIcon />}
+                  >
+                    mkrt.crypto.arsenal@gmail.com
+                  </Button>
+                </Box>
+              </Stack>
+            </Center>
           </Flex>
           <Box m={6}>
             <Divider />
@@ -770,7 +827,7 @@ const InternshipPage = () => {
                       fontFamily={'body'}
                       fontWeight={500}
                     >
-                      Taiwan Builder House
+                      TBH
                     </Heading>
                   </Stack>
                 </Box>
@@ -928,6 +985,7 @@ const InternshipPage = () => {
                   target={'_blank'}
                   mt={5}
                   w={'full'}
+                  maxW={'2xl'}
                   bg={'blue.400'}
                   color={'white'}
                   rounded={'xl'}

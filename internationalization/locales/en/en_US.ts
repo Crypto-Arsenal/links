@@ -41,6 +41,7 @@ export const en_US = {
   },
   internship: {
     Year: 'Year',
+    'Quantitative Trading Internship': 'Quantitative Trading Internship',
     'Recruitment Plan': {
       title: 'Recruitment Plan',
       content:

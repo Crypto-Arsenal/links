@@ -154,38 +154,22 @@ const ExpandableButton = () => {
                 <Box mt={3}>
                     <Divider />
                     <Box m={1}>
-                        <Box
-                            bg={useColorModeValue('gray.50', 'gray.900')}
-                            px={2}
-                            py={3}
-                        >
+                        <Box bg={useColorModeValue('gray.50', 'gray.900')} px={2} py={3}>
                             <List spacing={3}>
                                 <ListItem>
-                                    <ListIcon
-                                        as={CheckIcon}
-                                        color='green.400'
-                                    />
+                                    <ListIcon as={CheckIcon} color='green.400' />
                                     {t('job.Quant Intership')}
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon
-                                        as={CheckIcon}
-                                        color='green.400'
-                                    />
+                                    <ListIcon as={CheckIcon} color='green.400' />
                                     {t('job.Backend Internship')}
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon
-                                        as={CheckIcon}
-                                        color='green.400'
-                                    />
+                                    <ListIcon as={CheckIcon} color='green.400' />
                                     {t('job.Frontend Internship')}
                                 </ListItem>
                                 <ListItem>
-                                    <ListIcon
-                                        as={CheckIcon}
-                                        color='green.400'
-                                    />
+                                    <ListIcon as={CheckIcon} color='green.400' />
                                     {t('job.Marketing Internship')}
                                 </ListItem>
                             </List>
@@ -199,9 +183,7 @@ const ExpandableButton = () => {
                                 bg={'green.400'}
                                 color={'white'}
                                 rounded={'xl'}
-                                boxShadow={
-                                    '0 5px 20px 0px rgb(72 187 120 / 43%)'
-                                }
+                                boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
                                 _hover={{
                                     bg: 'green.500',
                                 }}
@@ -225,9 +207,7 @@ const ExpandableButton = () => {
                                 bg={'blue.400'}
                                 color={'white'}
                                 rounded={'xl'}
-                                boxShadow={
-                                    '0 5px 20px 0px rgb(63 115 255 / 43%)'
-                                }
+                                boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
                                 _hover={{
                                     bg: 'blue.500',
                                 }}
@@ -280,17 +260,17 @@ export default function SocialProfileSimple() {
                     // alt={'Avatar Alt'}
                     mb={4}
                     pos={'relative'}
-                    // _after={{
-                    //     content: '""',
-                    //     w: 4,
-                    //     h: 4,
-                    //     bg: 'green.300',
-                    //     border: '2px solid white',
-                    //     rounded: 'full',
-                    //     pos: 'absolute',
-                    //     bottom: 0,
-                    //     right: 3,
-                    // }}
+                // _after={{
+                //     content: '""',
+                //     w: 4,
+                //     h: 4,
+                //     bg: 'green.300',
+                //     border: '2px solid white',
+                //     rounded: 'full',
+                //     pos: 'absolute',
+                //     bottom: 0,
+                //     right: 3,
+                // }}
                 />
 
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
@@ -331,7 +311,7 @@ export default function SocialProfileSimple() {
                         as='a'
                         href='https://twitter.com/_cryptoarsenal_'
                     >
-                        @CryptoAsrsena1
+                        @CryptoArsena1
                     </Text>
                 </Box>
                 <Text
@@ -342,16 +322,11 @@ export default function SocialProfileSimple() {
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}
                 >
-                    Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap
-                    Between Strategy Creators and Traders
+                    Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap Between
+                    Strategy Creators and Traders
                 </Text>
                 <Center mt={4}>
-                    <Stack
-                        direction={'row'}
-                        justify={'center'}
-                        spacing={4}
-                        ml='15px'
-                    >
+                    <Stack direction={'row'} justify={'center'} spacing={4} ml='15px'>
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>2k</Text>
                             <Text fontSize={'sm'} color={'gray.500'}>
@@ -367,20 +342,16 @@ export default function SocialProfileSimple() {
 
                         <Stack spacing={0} align={'center'}>
                             <Text fontWeight={600}>120M</Text>
-                            <Text
-                                fontSize={'sm'}
-                                color={'gray.500'}
-                                fontWeight={'normal'}
-                            >
+                            <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                                 {t('stats.Trading Volume')}
                             </Text>
                         </Stack>
                     </Stack>
                 </Center>
 
-                <WebLink />  
+                <WebLink />
                 <Community />
-                
+
                 {/* <Stack mt={8} direction={'row'} spacing={4}>
                     <Button
                         flex={1}
@@ -413,12 +384,7 @@ export default function SocialProfileSimple() {
                     <Divider />
                 </Box>
                 <Center>
-                    <Stack
-                        spacing={'40px'}
-                        align={'center'}
-                        w={'full'}
-                        justify='center'
-                    >
+                    <Stack spacing={'40px'} align={'center'} w={'full'} justify='center'>
                         {/* <Box w={'full'}>
                             <Box fontWeight="extrabold" fontSize={'xl'}> <Text color="#e3007f"> {t("meetTaipei.Meet Taipei 2022")} </Text> </Box>
                             <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' mt={'20px'} >
@@ -444,10 +410,7 @@ export default function SocialProfileSimple() {
                         <Box w={'full'}>
                             <Box fontWeight='extrabold' fontSize={'xl'}>
                                 {' '}
-                                <Text color='#3F73FF'>
-                                    {' '}
-                                    {t('job.Work with Us')}{' '}
-                                </Text>{' '}
+                                <Text color='#3F73FF'> {t('job.Work with Us')} </Text>{' '}
                             </Box>
                             <Stack
                                 spacing={'40px'}

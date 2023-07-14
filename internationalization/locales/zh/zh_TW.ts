@@ -41,6 +41,7 @@ export const zh_TW = {
   },
   internship: {
     Year: '年',
+    'Quantitative Trading Internship': 'CA 2023 校園量化團隊',
     'Recruitment Plan': {
       title: '招募計畫',
       content:
