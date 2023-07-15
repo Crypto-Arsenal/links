@@ -146,7 +146,7 @@ const InternshipPage = () => {
               </Stack>
 
               <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>145M</Text>
+                <Text fontWeight={600}>$145M</Text>
                 <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
                   {t('stats.Trading Volume')}
                 </Text>
