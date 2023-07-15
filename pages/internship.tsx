@@ -1020,7 +1020,7 @@ const InternshipPage = () => {
             >
               <Box w={'full'}>
                 <Box fontWeight='extrabold' fontSize={'xl'}>
-                  <Text color='#3F73FF'>
+                  {/* <Text color='#3F73FF'>
                     {t('internship.How To Register.title')}
                   </Text>
                   <Text
@@ -1029,7 +1029,7 @@ const InternshipPage = () => {
                     whiteSpace={'pre-line'}
                   >
                     {t('internship.How To Register.content')}
-                  </Text>
+                  </Text> */}
                 </Box>
                 <ApplyButtonWithPopover />
               </Box>
