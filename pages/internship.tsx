@@ -36,6 +36,7 @@ import { useAnalytics } from '../src/utils/analytics';
 import { useTranslation } from 'react-i18next';
 import CallToActionWithVideo, { SplitWithImage } from '@/components/CTA';
 import GridListWithCTA from '@/components/GridCTA';
+import { ApplyButtonWithPopover } from '@/components/ApplyButton';
 
 const InternshipPage = () => {
   const { t } = useTranslation();
@@ -1030,28 +1031,7 @@ const InternshipPage = () => {
                     {t('internship.How To Register.content')}
                   </Text>
                 </Box>
-                <Button
-                  as='a'
-                  href='mailto:mkrt.crypto.arsenal@gmail.com'
-                  target={'_blank'}
-                  mt={5}
-                  w={'full'}
-                  maxW={'2xl'}
-                  bg={'blue.400'}
-                  color={'white'}
-                  rounded={'xl'}
-                  boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
-                  _hover={{
-                    bg: 'blue.500',
-                  }}
-                  _focus={{
-                    bg: 'blue.500',
-                  }}
-                  leftIcon={<EmailIcon />}
-                  rightIcon={<ExternalLinkIcon />}
-                >
-                  mkrt.crypto.arsenal@gmail.com
-                </Button>
+                <ApplyButtonWithPopover />
               </Box>
             </Stack>
           </Center>
