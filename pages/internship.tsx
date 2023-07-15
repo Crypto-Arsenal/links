@@ -20,6 +20,7 @@ import {
   SimpleGrid,
   Image,
   useTheme,
+  Link,
 } from '@chakra-ui/react';
 
 import { FaCode, FaInfoCircle } from 'react-icons/fa';
@@ -208,10 +209,9 @@ const InternshipPage = () => {
 
             <Box width={{ base: 'full', sm: 'xl', lg: '3xl' }} margin={'auto'}>
               <SplitWithImage />
-
-
             </Box>
             <Accordion
+              allowToggle
               defaultIndex={[0]}
               width='100%'
               maxW='3xl'
@@ -263,7 +263,13 @@ const InternshipPage = () => {
                     align={'left'}
                   >
                     {t('internship.Company Profile.content')}
-                    <UnorderedList>
+                    代表台灣參加多個國際線上展會的新創團隊之一，被 Google 等機構選中參與孵化計劃，並在百餘家新創中脫穎而出，獲選參加 CES 2021 的聯合記者會。2022年，該公司成為全球1300家新創中獲選參加 Berkeley SkyDeck 加速器的18家新創之一，並被選為代表台灣參加 SelectUSA 投資峰會的十家新創之一。到了2023年，該公司更進一步入選歐洲新創，並赴歐洲發展業務。
+                    <br />
+                    <br />
+                    <Link href='https://www.youtube.com/watch?v=kcfetlFndD0&ab_channel=Crypto-Arsenal' isExternal>
+                      About Crypto Arsenal @ Youtube <ExternalLinkIcon mx='2px' />
+                    </Link>
+                    {/* <UnorderedList>
                       <ListItem mt={2}>
                         2023 {t('internship.Year')}:
                         <OrderedList>
@@ -302,7 +308,7 @@ const InternshipPage = () => {
                           </ListItem>
                         </OrderedList>
                       </ListItem>
-                    </UnorderedList>
+                    </UnorderedList> */}
                   </Text>
                 </AccordionPanel>
               </AccordionItem>
@@ -543,6 +549,9 @@ const InternshipPage = () => {
           <Box m={6}>
             <Divider />
           </Box>
+          <Box width={{ base: 'full', sm: 'xl', lg: '3xl' }} margin={'auto'}>
+            <GridListWithCTA />
+          </Box>
           <Flex
             textAlign={'center'}
             justifyContent={'center'}
@@ -553,7 +562,7 @@ const InternshipPage = () => {
           >
             <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
               <Heading
-                py={5}
+                py={4}
                 fontSize={34}
                 fontFamily={'body'}
                 fontWeight={'bold'}
@@ -1000,9 +1009,7 @@ const InternshipPage = () => {
           <Box m={6}>
             <Divider />
           </Box>
-          <Box width={{ base: 'full', sm: 'xl', lg: '3xl' }} margin={'auto'}>
-            <GridListWithCTA />
-          </Box>
+
           <Center>
             <Stack
               spacing={'40px'}

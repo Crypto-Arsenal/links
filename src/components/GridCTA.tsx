@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { } from '@chakra-ui/react';
 import SimpleThreeColumns from './FeatureRow';
+import { ApplyButtonWithPopover } from './ApplyButton';
 
 interface FeatureProps {
     heading: string;
@@ -39,13 +40,13 @@ export default function GridListWithCTA() {
                 }}
                 gap={2}>
                 <GridItem colSpan={1}>
-                    <VStack alignItems="flex-start" spacing="20px">
+                    <VStack alignItems="flex-start" spacing="20px" >
                         <chakra.h2 fontSize="3xl" fontWeight="700">
                             開啟你的量化事業
                         </chakra.h2>
-                        <Button colorScheme="green" size="md">
-                            現在申請加入團隊
-                        </Button>
+                        <Box w={'80%'}>
+                            <ApplyButtonWithPopover />
+                        </Box>
                     </VStack>
                 </GridItem>
                 <GridItem>

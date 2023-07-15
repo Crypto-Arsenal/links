@@ -14,14 +14,34 @@ import {
     useColorModeValue,
     SimpleGrid,
     StackDivider,
+    ButtonGroup,
+    Popover,
+    PopoverArrow,
+    PopoverBody,
+    PopoverCloseButton,
+    PopoverContent,
+    PopoverFooter,
+    PopoverHeader,
+    PopoverTrigger,
+    Center,
+    List,
+    ListIcon,
+    ListItem,
 
 } from '@chakra-ui/react';
+import { FcGoogle } from 'react-icons/fc';
+import { FaInstagram } from 'react-icons/fa';
 import { ReactElement } from 'react';
 import {
     IoAnalyticsSharp,
     IoLogoBitcoin,
+    IoLogoInstagram,
     IoSearchSharp,
 } from 'react-icons/io5';
+import { EmailIcon, TimeIcon } from '@chakra-ui/icons';
+import { BsCheckCircle, BsLightbulb, BsLightbulbFill, BsPencilFill, BsPeople, BsPeopleFill } from 'react-icons/bs';
+import Link from 'next/link';
+import { ApplyButtonWithPopover } from './ApplyButton';
 
 interface FeatureProps {
     text: string;
@@ -46,27 +66,28 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 };
 
 export function SplitWithImage() {
+
     return (
         <Box py={6}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                 <Stack spacing={4}>
                     <Text
                         textTransform={'uppercase'}
-                        color={'blue.400'}
-                        fontWeight={600}
+                        color={'purple.400'}
+                        fontWeight={680}
                         fontSize={'sm'}
-                        bg={useColorModeValue('blue.50', 'blue.900')}
+                        bg={useColorModeValue('purple.50', 'purple.900')}
                         p={2}
                         alignSelf={'flex-start'}
                         rounded={'md'}>
                         Crypto Arsenal 2023
                     </Text>
-                    <Heading textAlign={'left'}>校園量化團隊</Heading>
-                    <Text textAlign={'left'} color={'gray.500'} fontSize={'lg'}>
+                    <Heading textAlign={'left'}>校園量化團隊計畫</Heading>
+                    <Text textAlign={'left'} color={useColorModeValue('gray.500', 'gray.300')} fontSize={'lg'}>
                         想學習量化，但沒有資源和不知道從何開始嗎？
-                        站上我們提供的舞台，踏上你的量化旅程！
-                        開啟你的量化事業，創造穩定被動收入。
+                        讓我們帶著你，踏上你的量化旅程！
                     </Text>
+                    <ApplyButtonWithPopover />
                     <Stack
                         spacing={4}
                         divider={
@@ -94,27 +115,7 @@ export function SplitWithImage() {
                             text={'分享和推廣CA平台及活動'}
                         />
                     </Stack>
-                    <Button
-                        as='a'
-                        href='mailto:mkrt.crypto.arsenal@gmail.com'
-                        target={'_blank'}
-                        mt={1}
-                        mb={5}
-                        w={'full'}
-                        // maxW={'3xs'}
-                        bg={'blue.400'}
-                        color={'white'}
-                        rounded={'lg'}
-                        boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
-                        _hover={{
-                            bg: 'blue.500',
-                        }}
-                        _focus={{
-                            bg: 'blue.500',
-                        }}
-                    >
-                        現在申請加入團隊
-                    </Button>
+
                 </Stack>
                 <Flex
                     flex={1}
@@ -187,14 +188,13 @@ export default function CallToActionWithVideo() {
                             CA 2023
                         </Text>
                         <br />
-                        <Text as={'span'} color={'purple.400'}>
+                        <Text as={'span'} color={'purple.400'} fontWeight={800}>
                             校園量化團隊
                         </Text>
                     </Heading>
                     <Text color={'gray.500'}>
                         開啟你的量化事業  創造穩定被動收入
                         想學習量化，但沒有資源和不知道從何開始嗎？
-
                     </Text>
                     <Stack
                         spacing={{ base: 4, sm: 6 }}
@@ -221,6 +221,7 @@ export default function CallToActionWithVideo() {
                         >
                             Apply Now
                         </Button>
+
                         {/* <Button
                             rounded={'full'}
                             size={'lg'}

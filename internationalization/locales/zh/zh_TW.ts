@@ -50,7 +50,7 @@ export const zh_TW = {
     'Company Profile': {
       title: '公司簡介',
       content:
-        'Crypto-Arsenal 是由一群國內外頂尖學府(USC、 U of Waterloo、台大、清大、交大等) 碩博士所共同建立的新創公司 2022 全亞洲唯一區塊鏈新創入取矽谷Berkeley Skydeck 加速器 我們致力於建構開放式加密貨幣量化交易平台，提供開發、串接、媒合與跟投的服務',
+        'Crypto-Arsenal 是由一群國內外頂尖學府(USC、 U of Waterloo、台大、清大、交大等) 碩博士所共同建立的新創公司，我們致力於建構開放式加密貨幣量化交易平台，提供開發、串接、媒合與跟投的服務。',
       year: {
         '2023': ['入選歐洲新創赴歐深耕'],
         '2022': [
