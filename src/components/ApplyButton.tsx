@@ -1,6 +1,5 @@
 import { EmailIcon, TimeIcon } from "@chakra-ui/icons"
-import { Popover, PopoverTrigger, Button, Flex, PopoverContent, PopoverHeader, PopoverArrow, PopoverCloseButton, PopoverBody, List, ListItem, ListIcon, PopoverFooter, Stack, Text } from "@chakra-ui/react"
-import Link from "next/link"
+import { Link, Popover, PopoverTrigger, Button, Flex, PopoverContent, PopoverHeader, PopoverArrow, PopoverCloseButton, PopoverBody, List, ListItem, ListIcon, PopoverFooter, Stack, Text } from "@chakra-ui/react"
 import { BsLightbulbFill, BsPencilFill, BsPeopleFill } from "react-icons/bs"
 import { FaInstagram } from "react-icons/fa"
 import { IoLogoInstagram } from "react-icons/io5"
@@ -59,11 +58,11 @@ export const ApplyButtonWithPopover = () => {
                         </ListItem>
                         <ListItem>
                             <ListIcon as={IoLogoInstagram} color='red.500' />
-                            IG 私訊至 <Link href="asdf"> @official_crypto_arsenal </Link>
+                            IG 私訊至 <Link href="https://www.instagram.com/crypto_arsenal_official/"> @official_crypto_arsenal </Link>
                         </ListItem>
                         <ListItem>
                             <ListIcon as={EmailIcon} color='blue.500' />
-                            Email 至 <Link href="asdf"> mkrt.crypto.arsenal@gmail.com </Link>
+                            Email 至 <Link href="mailto:mkrt.crypto.arsenal@gmail.com?subject=校園大使_姓名XXX&body=Tell Us About Yourself"> mkrt.crypto.arsenal@gmail.com </Link>
                         </ListItem>
                         <ListItem>
                             <ListIcon as={TimeIcon} color='green.500' />
@@ -85,11 +84,11 @@ export const ApplyButtonWithPopover = () => {
                                         Next
                                     </Button>
                                 </ButtonGroup> */}
-                    <Stack direction={['column', 'row']} spacing='6px'>
+                    <Stack direction={'row'} spacing='6px'>
                         <Button
                             leftIcon={<EmailIcon />}
                             as='a'
-                            href='mailto:mkrt.crypto.arsenal@gmail.com'
+                            href='mailto:mkrt.crypto.arsenal@gmail.com?subject=校園大使_姓名XXX&body=Tell Us About Yourself'
                             target={'_blank'}
                             // mt={1}
                             // mb={5}
@@ -134,7 +133,6 @@ export const ApplyButtonWithPopover = () => {
                             使用 IG
                         </Button>
                     </Stack>
-
                 </PopoverFooter>
             </PopoverContent>
         </Popover>

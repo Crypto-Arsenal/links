@@ -202,7 +202,7 @@ export default function CallToActionWithVideo() {
                     >
                         <Button
                             as='a'
-                            href='mailto:mkrt.crypto.arsenal@gmail.com'
+                            href='mailto:mkrt.crypto.arsenal@gmail.com?subject=校園大使_姓名XXX&body=Tell Us About Yourself'
                             target={'_blank'}
                             mt={1}
                             mb={5}
