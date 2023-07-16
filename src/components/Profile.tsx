@@ -5,78 +5,17 @@ import {
     Center,
     Text,
     Stack,
-    Button,
-    Link,
-    Badge,
     useColorModeValue,
     keyframes,
     Flex,
-    Code,
-    Image,
     Divider,
-    SimpleGrid,
-    Wrap,
-    Accordion,
-    AccordionButton,
-    AccordionIcon,
-    AccordionItem,
-    AccordionPanel,
-    useBoolean,
-    Slide,
-    useDisclosure,
-    Collapse,
-    List,
-    ListIcon,
-    ListItem,
-    useClipboard,
-    HStack,
 } from '@chakra-ui/react';
-import { TbMathFunction, TbNumber1, TbNumber2 } from 'react-icons/tb';
-import { FcGlobe, FcGoogle } from 'react-icons/fc';
-import {
-    FaCaretDown,
-    FaCaretUp,
-    FaCode,
-    FaDiscord,
-    FaExpand,
-    FaFacebook,
-    FaInfo,
-    FaInfoCircle,
-    FaInstagram,
-    FaLinkedin,
-    FaMediumM,
-    FaReddit,
-    FaRobot,
-    FaTelegram,
-    FaTv,
-    FaTwitter,
-} from 'react-icons/fa';
-import {
-    SiJirasoftware,
-    SiLinkedin,
-    SiMessenger,
-    SiTelegram,
-} from 'react-icons/si';
-import Verified from 'public/assets/images/verified.svg';
 
-import {
-    BsCaretDown,
-    BsFileWordFill,
-    BsGiftFill,
-    BsGlobe,
-    BsGlobe2,
-    BsInstagram,
-    BsJournalBookmark,
-    BsLink,
-    BsPeople,
-    BsPeopleFill,
-    BsTelegram,
-} from 'react-icons/bs';
-import { ImInstagram } from 'react-icons/im';
-import { CheckIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
 import Community from '../components/Community';
 import WebLink from './WebLink';
+import Flow from './Flow';
+import Job from './Job';
 
 const size = '96px';
 const color = 'teal';
@@ -93,160 +32,6 @@ const pulseRing = keyframes`
     opacity: 0;
   }
 	`;
-
-const ExpandableButton = () => {
-    const { isOpen, onToggle } = useDisclosure();
-    const { t } = useTranslation();
-
-    return (
-        <Box
-            boxShadow={
-                '0px 1px 25px -5px rgb(63 115 255 / 49%), 0 10px 10px -5px rgb(63 115 255 / 49%)'
-            }
-            // _hover={{
-            //     bg: 'blue.500',
-            // }}
-            // _focus={{
-            //     bg: 'blue.500',
-            // }}
-            // as='button'
-            w={'full'}
-            // boxShadow={'md'}
-            p={'10px'}
-            rounded={'lg'}
-            // align={{ base: null, md: 'center' }}
-            border='1px solid #3F73FF'
-        >
-            <Flex
-                as='button'
-                onClick={onToggle}
-                align={{ base: 'center', md: 'center' }}
-                // flexDir={{ base: 'column', md: 'row' }}
-                w={'full'}
-            >
-                <Center>
-                    <Flex
-                        bg='#3F73FF'
-                        width={{ base: '40px', md: '50px' }}
-                        height={{ base: '40px', md: '50px' }}
-                        rounded='md'
-                        justifyContent='center'
-                        alignItems={'center'}
-                    >
-                        {' '}
-                        <BsPeopleFill color='white' />{' '}
-                    </Flex>
-                </Center>
-                <Box w='full'>
-                    <Flex
-                        justifyContent='center'
-                        alignItems={'center'}
-                        textAlign='center'
-                    >
-                        <Text fontWeight={'bold'} color='#3F73FF'>
-                            {t('job.Join our Wordclass Team')}{' '}
-                        </Text>
-                    </Flex>
-                </Box>
-                <Box mr={2}>{isOpen ? <FaCaretUp /> : <FaCaretDown />}</Box>
-            </Flex>
-            <Collapse in={isOpen} animateOpacity>
-                <Box mt={3}>
-                    <Divider />
-                    <Box m={1}>
-                        <Box bg={useColorModeValue('gray.50', 'gray.900')} px={2} py={3}>
-                            <List spacing={3}>
-                                <ListItem>
-                                    <ListIcon as={CheckIcon} color='green.400' />
-                                    {t('job.Quant Intership')}
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon as={CheckIcon} color='green.400' />
-                                    {t('job.Backend Internship')}
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon as={CheckIcon} color='green.400' />
-                                    {t('job.Frontend Internship')}
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon as={CheckIcon} color='green.400' />
-                                    {t('job.Marketing Internship')}
-                                </ListItem>
-                            </List>
-                            <Button
-                                as='a'
-                                href='/internship'
-                                mt={10}
-                                w={'full'}
-                                bg={'purple.400'}
-                                color={'white'}
-                                rounded={'xl'}
-                                boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
-                                _hover={{
-                                    bg: 'purple.500',
-                                }}
-                                _focus={{
-                                    bg: 'purple.500',
-                                }}
-                                rightIcon={<ExternalLinkIcon />}
-                            >
-                                校園量化團隊{' '}
-                            </Button>
-                            <Button
-                                as='a'
-                                href='https://www.cakeresume.com/companies/crypto-arsenal/jobs'
-                                target={'_blank'}
-                                mt={3}
-                                w={'full'}
-                                bg={'green.400'}
-                                color={'white'}
-                                rounded={'xl'}
-                                boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
-                                _hover={{
-                                    bg: 'green.500',
-                                }}
-                                _focus={{
-                                    bg: 'green.500',
-                                }}
-                                rightIcon={<ExternalLinkIcon />}
-                            >
-                                Cakeresume{' '}
-                                <Badge colorScheme='green' ml={2}>
-                                    {' '}
-                                    3 NEW{' '}
-                                </Badge>
-                            </Button>
-                            <Button
-                                as='a'
-                                href='https://www.yourator.co/companies/Crypto-Arsenal'
-                                target={'_blank'}
-                                mt={3}
-                                w={'full'}
-                                bg={'blue.400'}
-                                color={'white'}
-                                rounded={'xl'}
-                                boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
-                                _hover={{
-                                    bg: 'blue.500',
-                                }}
-                                _focus={{
-                                    bg: 'blue.500',
-                                }}
-                                rightIcon={<ExternalLinkIcon />}
-                            >
-                                Yourator{' '}
-                                <Badge colorScheme='green' ml={2}>
-                                    {' '}
-                                    4 NEW{' '}
-                                </Badge>
-                            </Button>
-                        </Box>
-                    </Box>
-                </Box>
-            </Collapse>
-        </Box>
-    );
-};
 
 export default function SocialProfileSimple() {
     const { t } = useTranslation();
@@ -343,31 +128,9 @@ export default function SocialProfileSimple() {
                     Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap Between
                     Strategy Creators and Traders
                 </Text>
-                <Center mt={4}>
-                    <Stack direction={'row'} justify={'center'} spacing={4} ml='15px'>
-                        <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>2k</Text>
-                            <Text fontSize={'sm'} color={'gray.500'}>
-                                {t('stats.Trading Bots')}
-                            </Text>
-                        </Stack>
-                        <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>6k</Text>
-                            <Text fontSize={'sm'} color={'gray.500'}>
-                                {t('stats.Users')}
-                            </Text>
-                        </Stack>
-
-                        <Stack spacing={0} align={'center'}>
-                            <Text fontWeight={600}>120M</Text>
-                            <Text fontSize={'sm'} color={'gray.500'} fontWeight={'normal'}>
-                                {t('stats.Trading Volume')}
-                            </Text>
-                        </Stack>
-                    </Stack>
-                </Center>
-
-                <WebLink />
+                
+                <Flow />
+                <WebLink />  
                 <Community />
 
                 {/* <Stack mt={8} direction={'row'} spacing={4}>
@@ -437,7 +200,7 @@ export default function SocialProfileSimple() {
                                 justify='center'
                                 mt={'20px'}
                             >
-                                <ExpandableButton />
+                                <Job />
                             </Stack>
                         </Box>
                     </Stack>
