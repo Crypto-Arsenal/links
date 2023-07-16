@@ -7,11 +7,11 @@ const flowList = [
         name: 'stats.Trading Bots',
     },
     {
-        number: '6k',
+        number: '6.6k',
         name: 'stats.Users',
     },
     {
-        number: '120M',
+        number: '$144M',
         name: 'stats.Trading Volume',
     },
 ];
@@ -21,8 +21,8 @@ export default function Flow() {
     return (
         <Center mt={4}>
             <Stack direction={'row'} justify={'center'} spacing={4} ml='15px'>
-                {flowList.map((flow) => (
-                    <Stack spacing={0} align={'center'}>
+                {flowList.map((flow, i) => (
+                    <Stack key={i} spacing={0} align={'center'}>
                         <Text fontWeight={600}>{flow.number}</Text>
                         <Text fontSize={'sm'} color={'gray.500'}>
                             {t(flow.name)}

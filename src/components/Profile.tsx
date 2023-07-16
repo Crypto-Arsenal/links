@@ -125,12 +125,11 @@ export default function SocialProfileSimple() {
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}
                 >
-                    Web2 & Web3 Crypto Bot Marketplace that Bridges the Gap Between
-                    Strategy Creators and Traders
+                    📄 策略開發 & 跟單帶單 🔗 各大交易所 API 串接 👨🏻‍💻 TradingView & Python
                 </Text>
-                
+
                 <Flow />
-                <WebLink />  
+                <WebLink />
                 <Community />
 
                 {/* <Stack mt={8} direction={'row'} spacing={4}>

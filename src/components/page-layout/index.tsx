@@ -1,6 +1,7 @@
 import { Box, Center, Container, ContainerProps } from '@chakra-ui/react';
 import { motion, Variants } from 'framer-motion';
 import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 
 const variants: Variants = {
@@ -28,30 +29,35 @@ type PageProps = {
   title: string;
   description?: string;
   children: ReactNode;
+  image?: string;
+  ogTitle?: string
 };
 
 const MotionContainer = motion<ContainerProps>(Container);
 
-const PageLayout = ({ title, description, children }: PageProps) => {
+const PageLayout = ({ title, description, children, image, ogTitle }: PageProps) => {
+  const router = useRouter()
   return (
     <>
       <NextSeo
         title={title + ' | Crypto Arsenal'}
         description={description}
+
         twitter={{
           cardType: 'summary_large_image',
           handle: 'CryptoArsena1',
         }}
         openGraph={{
-          url: 'https://links.crypto-arsenal.io',
-          title: title + ' | Crypto Arsenal',
+          url: 'https://links.crypto-arsenal.io' + router.pathname,
+          title: ogTitle ?? title + ' | Crypto Arsenal',
           description: description,
+          type: "website",
           locale: 'en_US',
           images: [
             {
-              url: 'https://crypto-arsenal.io/_next/image?url=%2Fstatic%2Flanding-page-rwd%2Fmain-computer.png&w=1920&q=7',
-              width: 1200,
-              height: 630,
+              url: image ?? 'https://crypto-arsenal.io/_next/image?url=%2Fstatic%2Flanding-page-rwd%2Fmain-computer.png&w=1920&q=7',
+              // width: 1200,
+              // height: 630,
               alt: 'Links | Crypto Arsenal',
               type: 'image/png',
             },

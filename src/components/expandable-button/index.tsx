@@ -25,7 +25,7 @@ type ExpandableButtonProps = {
     }
 }
 const ExpandableButton = ({ children, style }: ExpandableButtonProps) => {
-    const { isOpen, onToggle } = useDisclosure();
+    const { isOpen, onToggle } = useDisclosure({ defaultIsOpen: true });
     const { t } = useTranslation();
 
     return (
