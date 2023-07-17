@@ -63,17 +63,17 @@ export default function SocialProfileSimple() {
                     // alt={'Avatar Alt'}
                     mb={4}
                     pos={'relative'}
-                // _after={{
-                //     content: '""',
-                //     w: 4,
-                //     h: 4,
-                //     bg: 'green.300',
-                //     border: '2px solid white',
-                //     rounded: 'full',
-                //     pos: 'absolute',
-                //     bottom: 0,
-                //     right: 3,
-                // }}
+                    // _after={{
+                    //     content: '""',
+                    //     w: 4,
+                    //     h: 4,
+                    //     bg: 'green.300',
+                    //     border: '2px solid white',
+                    //     rounded: 'full',
+                    //     pos: 'absolute',
+                    //     bottom: 0,
+                    //     right: 3,
+                    // }}
                 />
 
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
@@ -125,7 +125,10 @@ export default function SocialProfileSimple() {
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}
                 >
-                    📄 策略開發 & 跟單帶單 🔗 各大交易所 API 串接 👨🏻‍💻 TradingView & Python
+                    📄 {t('intro.Strategy Development')} &{' '}
+                    {t('intro.Copy Trading')} 🔗{' '}
+                    {t('intro.Integration with APIs of Major Exchanges')} 👨🏻‍💻
+                    TradingView & Python
                 </Text>
 
                 <Flow />
@@ -164,7 +167,12 @@ export default function SocialProfileSimple() {
                     <Divider />
                 </Box>
                 <Center>
-                    <Stack spacing={'40px'} align={'center'} w={'full'} justify='center'>
+                    <Stack
+                        spacing={'40px'}
+                        align={'center'}
+                        w={'full'}
+                        justify='center'
+                    >
                         {/* <Box w={'full'}>
                             <Box fontWeight="extrabold" fontSize={'xl'}> <Text color="#e3007f"> {t("meetTaipei.Meet Taipei 2022")} </Text> </Box>
                             <Stack spacing={"40px"} align={'center'} w={'full'} justify='center' mt={'20px'} >
@@ -190,7 +198,10 @@ export default function SocialProfileSimple() {
                         <Box w={'full'}>
                             <Box fontWeight='extrabold' fontSize={'xl'}>
                                 {' '}
-                                <Text color='#3F73FF'> {t('job.Work with Us')} </Text>{' '}
+                                <Text color='#3F73FF'>
+                                    {' '}
+                                    {t('job.Work with Us')}{' '}
+                                </Text>{' '}
                             </Box>
                             <Stack
                                 spacing={'40px'}

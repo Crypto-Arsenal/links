@@ -5,6 +5,11 @@ export const zh_TW = {
         twitter: 'https://twitter.com/CryptoArsenalCN',
     },
     excerpt: 'afs',
+    intro: {
+        'Strategy Development': '策略開發',
+        'Copy Trading': '跟單帶單',
+        'Integration with APIs of Major Exchanges': '各大交易所 API 串接',
+    },
     stats: {
         Users: '用戶',
         'Trading Bots': '量化機器人',
