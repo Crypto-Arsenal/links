@@ -21,6 +21,33 @@ const positionList = [
     { name: 'job.Marketing Internship' },
 ];
 
+const jobWebList = [
+    {
+        href: '/internship',
+        color: 'purple',
+        text: '量化實習生計畫👩‍💻',
+        openings: '1 NEW',
+    },
+    {
+        href: 'https://www.104.com.tw/job/81xca?jobsource=checkc',
+        color: 'orange',
+        text: '104',
+        openings: '1 NEW',
+    },
+    {
+        href: 'https://www.cakeresume.com/companies/crypto-arsenal/jobs',
+        color: 'green',
+        text: 'Cakeresume',
+        openings: '3 NEW',
+    },
+    {
+        href: 'https://www.yourator.co/companies/Crypto-Arsenal',
+        color: 'blue',
+        text: 'Yourator',
+        openings: '4 NEW',
+    },
+];
+
 const Position = () => {
     const { t } = useTranslation();
     return (
@@ -35,109 +62,47 @@ const Position = () => {
     );
 };
 
+const JobWeb = () => {
+    return (
+        <>
+            {jobWebList.map((web, i) => (
+                <Button
+                    key={i}
+                    as='a'
+                    href={web.href}
+                    target={'_blank'}
+                    mt={10}
+                    w={'full'}
+                    bg={web.color + '.400'}
+                    color={'white'}
+                    rounded={'xl'}
+                    boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
+                    _hover={{
+                        bg: web.color + '.500',
+                    }}
+                    _focus={{
+                        bg: web.color + '.500',
+                    }}
+                    rightIcon={<ExternalLinkIcon />}
+                >
+                    {web.text}{' '}
+                    <Badge colorScheme={web.color} ml={2}>
+                        {' '}
+                        {web.openings}{' '}
+                    </Badge>
+                </Button>
+            ))}
+        </>
+    );
+};
+
 export default function Job() {
     return (
         <>
-            <ExpandableButton style={style} >
+            <ExpandableButton style={style}>
                 <Position />
-                <Button
-                    as='a'
-                    href='/internship'
-                    // target={'_blank'}ss
-                    mt={10}
-                    w={'full'}
-                    bg={'purple.400'}
-                    color={'white'}
-                    rounded={'xl'}
-                    boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
-                    _hover={{
-                        bg: 'purple.500',
-                    }}
-                    _focus={{
-                        bg: 'purple.500',
-                    }}
-                    rightIcon={<ExternalLinkIcon />}
-                >
-                    量化實習生計畫👩‍💻 {' '}
-                    <Badge colorScheme='purple' ml={2}>
-                        {' '}
-                        1 NEW{' '}
-                    </Badge>
-                </Button>
-                <Button
-                    as='a'
-                    href='https://www.104.com.tw/job/81xca?jobsource=checkc'
-                    target={'_blank'}
-                    mt={10}
-                    w={'full'}
-                    bg={'orange.400'}
-                    color={'white'}
-                    rounded={'xl'}
-                    boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
-                    _hover={{
-                        bg: 'orange.500',
-                    }}
-                    _focus={{
-                        bg: 'orange.500',
-                    }}
-                    rightIcon={<ExternalLinkIcon />}
-                >
-                    104 {' '}
-                    <Badge colorScheme='orange' ml={2}>
-                        {' '}
-                        1 NEW{' '}
-                    </Badge>
-                </Button>
-                <Button
-                    as='a'
-                    href='https://www.cakeresume.com/companies/crypto-arsenal/jobs'
-                    target={'_blank'}
-                    mt={10}
-                    w={'full'}
-                    bg={'green.400'}
-                    color={'white'}
-                    rounded={'xl'}
-                    boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
-                    _hover={{
-                        bg: 'green.500',
-                    }}
-                    _focus={{
-                        bg: 'green.500',
-                    }}
-                    rightIcon={<ExternalLinkIcon />}
-                >
-                    Cakeresume{' '}
-                    <Badge colorScheme='green' ml={2}>
-                        {' '}
-                        3 NEW{' '}
-                    </Badge>
-                </Button>
-                <Button
-                    as='a'
-                    href='https://www.yourator.co/companies/Crypto-Arsenal'
-                    target={'_blank'}
-                    mt={3}
-                    w={'full'}
-                    bg={'blue.400'}
-                    color={'white'}
-                    rounded={'xl'}
-                    boxShadow={'0 5px 20px 0px rgb(63 115 255 / 43%)'}
-                    _hover={{
-                        bg: 'blue.500',
-                    }}
-                    _focus={{
-                        bg: 'blue.500',
-                    }}
-                    rightIcon={<ExternalLinkIcon />}
-                >
-                    Yourator{' '}
-                    <Badge colorScheme='green' ml={2}>
-                        {' '}
-                        4 NEW{' '}
-                    </Badge>
-                </Button>
+                <JobWeb />
             </ExpandableButton>
-
         </>
     );
 }
