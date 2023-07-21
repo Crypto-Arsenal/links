@@ -52,6 +52,13 @@ export const zh_TW = {
         Year: '年',
         'Quantitative Internship Program 👩‍💻': '量化實習生計畫👩‍💻',
         'Quantitative Trading Internship': 'CA 2023 校園量化團隊',
+        'Campus Quantitative Team Program': '校園量化團隊計畫',
+        'Intro': {
+            title: '校園量化交易實習生計畫 👩‍💻',
+            subTitle: '📣 校園量化交易實習生開始徵才了 🎉',
+            forward: '想學習量化，但沒有資源和不知道從何開始嗎？ 讓我們帶著你，踏上你的量化旅程！',
+            content: '開啟你的量化事業，創造穩定被動收入！學習專業加密量化團隊的交易見解和策略，並著手開發、上架自己的策略，並且參與量化交易活動和比賽！'
+        },
         'Recruitment Plan': {
             title: '招募計畫',
             content:
@@ -81,7 +88,7 @@ export const zh_TW = {
             list: [
                 '參與量化課程和講座',
                 '參與量化交易活動和比賽',
-                '與團隊研究和開發策略',
+                '團隊研究和開發策略',
                 '經營策略品牌',
                 '分享和推廣CA平台及活動',
             ],

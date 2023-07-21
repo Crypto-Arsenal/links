@@ -52,6 +52,13 @@ export const en_US = {
     Year: 'Year',
     'Quantitative Internship Program 👩‍💻': 'Quantitative Internship Program 👩‍💻',
     'Quantitative Trading Internship': 'Quantitative Trading Internship',
+    'Campus Quantitative Team Program': 'Campus Quantitative Team Program',
+    'Intro': {
+      title: 'Campus Quantitative Trading Internship Program 👩‍💻',
+      subTitle: '📣 Campus Quantitative Trading Internship Program is now recruiting 🎉',
+      forward: "Do you want to learn about quantitative trading but lack resources and don't know where to start? Let us guide you and embark on your quantitative journey together!",
+      content: 'Open up your quantitative career and create a stable passive income! Learn from professional crypto quantitative trading teams, their trading insights, and strategies. Get hands-on experience in developing and deploying your own strategies, and participate in quantitative trading events and competitions!'
+    },
     'Recruitment Plan': {
       title: 'Recruitment Plan',
       content:

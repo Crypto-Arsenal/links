@@ -54,12 +54,12 @@ const InternshipPage = () => {
   return (
     <>
       <Head>
-        <title>校園量化交易實習生計畫 👩‍💻</title>
+        <title>{t('internship.Intro.title')}</title>
         <meta property="og:image" content="https://links.crypto-arsenal.io/assets/images/ca-internship-cover.png" />
-        <meta property="og:title" content="📣 校園量化交易實習生開始徵才了 🎉" />
-        <meta property="og:description" content="開啟你的量化事業，創造穩定被動收入！學習專業加密量化團隊的交易見解和策略，並著手開發、上架自己的策略，並且參與量化交易活動和比賽！" />
+        <meta property="og:title" content={t('internship.Intro.subTitle')} />
+        <meta property="og:description" content={t('internship.Intro.content')} />
       </Head>
-      <PageLayout title='校園量化交易實習生計畫 👩‍💻' ogTitle="📣 校園量化交易實習生開始徵才了 🎉" description='開啟你的量化事業，創造穩定被動收入！學習專業加密量化團隊的交易見解和策略，並著手開發、上架自己的策略，並且參與量化交易活動和比賽！' image="https://links.crypto-arsenal.io/assets/images/ca-internship-cover.png">
+      <PageLayout title={t('internship.Intro.title')} ogTitle={t('internship.Intro.subTitle')} description={t('internship.Intro.content')} image="https://links.crypto-arsenal.io/assets/images/ca-internship-cover.png">
         <Center py={3}>
           <Box
             w={'full'}
@@ -135,8 +135,8 @@ const InternshipPage = () => {
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}
             >
-              📄 策略開發 & 跟單帶單
-              🔗 各大交易所 API 串接
+              📄 {t('intro.Strategy Development')} & {t('intro.Copy Trading')}
+              🔗 {t('intro.Integration with APIs of Major Exchanges')}
               👨🏻‍💻 TradingView & Python
             </Text>
             <Center mt={4}>
