@@ -11,6 +11,9 @@ export const en_US = {
     'Copy Trading': 'Copy Trading',
     'Integration with APIs of Major Exchanges': 'Integration with APIs of Major Exchanges',
   },
+  colab: {
+    'Register with Invitation code': 'Register with Invitation code'
+  },
   stats: {
     Users: 'Users',
     'Trading Bots': 'Trading Bots',
@@ -46,6 +49,7 @@ export const en_US = {
   },
   internship: {
     Year: 'Year',
+    'Quantitative Internship Program 👩‍💻': 'Quantitative Internship Program 👩‍💻',
     'Quantitative Trading Internship': 'Quantitative Trading Internship',
     'Recruitment Plan': {
       title: 'Recruitment Plan',

@@ -25,7 +25,7 @@ const jobWebList = [
     {
         href: '/internship',
         color: 'purple',
-        text: '量化實習生計畫👩‍💻',
+        text: 'internship.Quantitative Internship Program 👩‍💻',
         openings: '1 NEW',
     },
     {
@@ -63,6 +63,7 @@ const Position = () => {
 };
 
 const JobWeb = () => {
+    const { t } = useTranslation();
     return (
         <>
             {jobWebList.map((web, i) => (
@@ -85,7 +86,7 @@ const JobWeb = () => {
                     }}
                     rightIcon={<ExternalLinkIcon />}
                 >
-                    {web.text}{' '}
+                    {t(web.text)}{' '}
                     <Badge colorScheme={web.color} ml={2}>
                         {' '}
                         {web.openings}{' '}

@@ -10,6 +10,9 @@ export const zh_TW = {
         'Copy Trading': '跟單帶單',
         'Integration with APIs of Major Exchanges': '各大交易所 API 串接',
     },
+    colab: {
+        'Register with Invitation code': '註冊時使用邀請碼'
+    },
     stats: {
         Users: '用戶',
         'Trading Bots': '量化機器人',
@@ -46,6 +49,7 @@ export const zh_TW = {
     },
     internship: {
         Year: '年',
+        'Quantitative Internship Program 👩‍💻': '量化實習生計畫👩‍💻',
         'Quantitative Trading Internship': 'CA 2023 校園量化團隊',
         'Recruitment Plan': {
             title: '招募計畫',
