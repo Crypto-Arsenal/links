@@ -26,7 +26,7 @@ const Collaborator = ({ bgSrc, name, link }: CollaboratorType) => {
                 marginX: spacing,
             }}
         >
-            <Link href='https://chakra-ui.com' isExternal>
+            <Link href={link} isExternal>
                 <Box
                     role={'group'}
                     p={6}
