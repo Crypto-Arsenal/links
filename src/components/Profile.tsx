@@ -9,13 +9,17 @@ import {
     keyframes,
     Flex,
     Divider,
+    useTheme,
+    Icon,
+    Link,
 } from '@chakra-ui/react';
-
+import { BsFillHeartPulseFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import Community from '../components/Community';
 import WebLink from './WebLink';
 import Flow from './Flow';
 import Job from './Job';
+import Partner from './Partner';
 
 const size = '96px';
 const color = 'teal';
@@ -36,6 +40,7 @@ const pulseRing = keyframes`
 export default function SocialProfileSimple() {
     const { t } = useTranslation();
     const banner = '/assets/images/banner.png';
+    const theme = useTheme();
     return (
         <Center py={3}>
             <Box
@@ -104,6 +109,18 @@ export default function SocialProfileSimple() {
                                     strokeWidth='2'
                                 />
                             </svg>
+                        </Box>
+                        <Box ml='1'>
+                            <Link
+                                href='https://status.crypto-arsenal.io/'
+                                isExternal
+                            >
+                                <Icon
+                                    as={BsFillHeartPulseFill}
+                                    boxSize={4}
+                                    color='red.500'
+                                />
+                            </Link>
                         </Box>
                     </Flex>
                 </Heading>
@@ -215,6 +232,12 @@ export default function SocialProfileSimple() {
                         </Box>
                     </Stack>
                 </Center>
+
+                <Box m={6}>
+                    <Divider />
+                </Box>
+
+                <Partner />
             </Box>
         </Center>
     );

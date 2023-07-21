@@ -12,7 +12,8 @@ export const en_US = {
     'Integration with APIs of Major Exchanges': 'Integration with APIs of Major Exchanges',
   },
   colab: {
-    'Register with Invitation code': 'Register with Invitation code'
+    'Partners': 'Partners',
+    'Register With Invitation Code!': 'Register With Invitation Code!'
   },
   stats: {
     Users: 'Users',

@@ -11,7 +11,8 @@ export const zh_TW = {
         'Integration with APIs of Major Exchanges': '各大交易所 API 串接',
     },
     colab: {
-        'Register with Invitation code': '註冊時使用邀請碼'
+        'Register With Invitation Code!': '使用邀請碼註冊！',
+        'Partners': '合作夥伴'
     },
     stats: {
         Users: '用戶',
