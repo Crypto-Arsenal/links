@@ -13,42 +13,42 @@ const colabList = [
     {
         src: '/assets/images/colab/binance.png',
         name: 'Binance',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.binance.com/en',
     },
     {
         src: '/assets/images/colab/crypto.jpeg',
         name: 'Crypto.com',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://crypto.com/',
     },
     {
         src: '/assets/images/colab/bitfinex.png',
         name: 'Bitfinex',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.bitfinex.com/',
     },
     {
         src: '/assets/images/colab/bitget.png',
         name: 'Bitget',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.bitget.com/',
     },
     {
         src: '/assets/images/colab/kraken.jpeg',
         name: 'Kraken',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.kraken.com/',
     },
     {
         src: '/assets/images/colab/okx.png',
         name: 'OKX',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.okx.com/',
     },
     {
         src: '/assets/images/colab/bybit.png',
         name: 'Bybit',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.bybit.com/en-GB/',
     },
     {
         src: '/assets/images/colab/huobi.jpeg',
         name: 'Huobi',
-        link: 'https://accounts.binance.com/en/register-person?gclid=CjwKCAjwtuOlBhBREiwA7agf1hvxohDmlgwjZDrlnTKblFLLTLI-1MKSZ0-aLnm00qJktl7hxO1SRxoCsLoQAvD_BwE&ref=PV44VRAY',
+        link: 'https://www.huobi.com/en-us/',
     },
 ];
 
