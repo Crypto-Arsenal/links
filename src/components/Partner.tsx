@@ -90,8 +90,9 @@ export default function Partner() {
                 justifyContent='center'
                 marginX={`calc(${spacing} / -2)`}
             >
-                {colabList.map((colab) => (
+                {colabList.map((colab, i) => (
                     <Collaborator
+                        key={i}
                         bgSrc={colab.src}
                         name={colab.name}
                         link={colab.link}
