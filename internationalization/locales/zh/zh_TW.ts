@@ -4,6 +4,11 @@ export const zh_TW = {
         medium: 'https://medium.com/@mkrt.crypto.arsenal',
         twitter: 'https://twitter.com/CryptoArsenalCN',
     },
+    tabs: {
+        'Status': '狀態',
+        'Home': '主頁',
+        'Quantitative Internship Program': '量化實習生計畫'
+      },
     excerpt: 'afs',
     intro: {
         'Strategy Development': '策略開發',

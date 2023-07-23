@@ -110,18 +110,6 @@ export default function SocialProfileSimple() {
                                 />
                             </svg>
                         </Box>
-                        <Box ml='1'>
-                            <Link
-                                href='https://status.crypto-arsenal.io/'
-                                isExternal
-                            >
-                                <Icon
-                                    as={BsFillHeartPulseFill}
-                                    boxSize={4}
-                                    color='red.500'
-                                />
-                            </Link>
-                        </Box>
                     </Flex>
                 </Heading>
                 <Box mb={4}>
